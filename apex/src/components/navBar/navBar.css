@@ -1,0 +1,23 @@
+.ApexLogo:hover {
+    transform: scale(1.1); 
+    cursor: pointer; 
+  }
+
+@keyframes flip {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  
+  .ApexLogo:hover {
+    animation: flip 1s ease-in-out; 
+  }
+  
+
+  /* navBar.css */
+
+  
+  
