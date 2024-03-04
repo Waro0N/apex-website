@@ -1,7 +1,10 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import  Home  from './pages/home'
+
+import './App.css';
+import Hero from './components/Hero/Hero';
+import Homepage from './components/Homepage/Homepage';
+import NavigationBar from './components/Navbar/NavigationBar';
+import TopBar from "./components/TopBar/TopBar";
+import Footer from './components/footer/footer';
 
 
 function App() {
@@ -9,11 +12,14 @@ function App() {
 
   return (
     <>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </Router>
+    <header className="header">
+    <TopBar/>
+    <NavigationBar/>
+    <Hero/>
+    <Homepage/>
+    <Footer/>
+    </header>
+    
     </>
   )
 }
