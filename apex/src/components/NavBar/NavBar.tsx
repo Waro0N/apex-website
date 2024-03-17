@@ -1,7 +1,9 @@
+
+import { Link } from 'react-router-dom'
 import'../../App.css'
 import logo from "../../assets/images/Apex Logo.png"
 
-function NavigationBar() {
+export default function navBar() {
   return (
     <div>
        {/* Header Start  */}
@@ -16,13 +18,13 @@ function NavigationBar() {
 
       <nav id="navbar" className="navbar">
         <ul>
-          <li><a className="active" href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Our Business</a></li>
-          <li><a href="portfolio.html">Sustainablity</a></li>
-          <li><a href="team.html">Product and Services</a></li>
-          <li><a href="pricing.html">Career</a></li>
-          <li><a href="blog.html">Contact Us</a></li>
+          <Link to="/"><li>Home</li></Link>
+          <Link to="/about"><li>About</li></Link>
+          <Link to="/business-insider"><li>Our Business</li></Link>
+          <Link to="/sustainablity"><li>Sustainablity</li></Link>
+          <Link to="/product"><li>Product and Services</li></Link>
+          <Link to="/career"><li>Career</li></Link>
+          <Link to="/contact"><li>Contact Us</li></Link>
         </ul>
         <i className="bi bi-list mobile-nav-toggle"></i>
       </nav>
@@ -34,5 +36,3 @@ function NavigationBar() {
     </div>
   )
 }
-
-export default NavigationBar
