@@ -14,7 +14,7 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactApex />} />
           <Route path="/services" element={<ApexServices />} />

@@ -10,21 +10,16 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import ApexLogo from '../../assets/Apex_Logo2.png';
-// import { Height } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
 import './navBar.css';
+import { Grid } from "@mui/material"
 
-
-
-
-
-const pages = ['Home', 'Projects', 'Services', 'Careers', 'About', 'Contact'];
+const pages = ['Home', 'Projects', 'Services', 'Careers', 'About', 'Contact us'];
 
 const ApexNav = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
-  // const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
   const [anchorElCareers, setAnchorElCareers] = React.useState<null | HTMLElement>(null);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -34,24 +29,19 @@ const ApexNav = () => {
     setAnchorElNav(null);
   };
 
-  
-  const handleOpenCareersMenu = (event: React.MouseEvent<HTMLElement>, key:string) => {
-    if(key ==="Careers"){
-    setAnchorElCareers(event.currentTarget);}
-    else if(key === "About"){
-      navigate("/about")
-    }
-    else if(key === "Contact"){
-      navigate("/contact")
-    }
-    else if(key === "Projects"){
-      navigate("/projects")
-    }
-    else if(key === "Services"){
-      navigate("/services")
-    }
-    else{
-      navigate("/home")
+  const handleOpenCareersMenu = (event: React.MouseEvent<HTMLElement>, key: string) => {
+    if (key === "Careers") {
+      setAnchorElCareers(event.currentTarget);
+    } else if (key === "About") {
+      navigate("/about");
+    } else if (key === "Contact us") {
+      navigate("/contact");
+    } else if (key === "Projects") {
+      navigate("/projects");
+    } else if (key === "Services") {
+      navigate("/services");
+    } else {
+      navigate("/");
     }
   };
 
@@ -60,16 +50,16 @@ const ApexNav = () => {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: '#FFFFFF', color: '#084c44', boxShadow: '10px 2px 30px rgba(0, 0, 0, 0.5)' }}>
+    <AppBar position="sticky" sx={{ backgroundColor: '#FFFFFF', color: '#084c44', boxShadow: '10px 2px 30px rgba(0, 0, 0, 0.5)' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-        <img src={ApexLogo} alt="Logo" className='ApexLogo' style={{ width: 70, marginRight: 5, alignItems: 'center'}} />
+          <img src={ApexLogo} alt="Logo" className='ApexLogo' style={{ width: 70, marginRight: 5, alignItems: 'center' }} />
           <Typography
             noWrap
             component="a"
             href=""
             sx={{
-              mr: 50,
+              mr: 60,
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'Arial',
               fontWeight: 700,
@@ -78,7 +68,7 @@ const ApexNav = () => {
               textDecoration: 'none',
             }}
           >
-          APEX ENGINEERS AND CONSULTANCY
+            APEX ENGINEERS AND CONSULTANTS
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -89,7 +79,6 @@ const ApexNav = () => {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
-              
             >
               <MenuIcon />
             </IconButton>
@@ -156,7 +145,7 @@ const ApexNav = () => {
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
+          {/* <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -167,10 +156,11 @@ const ApexNav = () => {
             >
               <MenuIcon />
             </IconButton>
-          </Box>
+          </Box> */}
         </Toolbar>
       </Container>
     </AppBar>
+    
   );
 };
 

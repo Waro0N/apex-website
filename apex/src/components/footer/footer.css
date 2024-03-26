@@ -1,0 +1,39 @@
+.footer {
+    background-color: black;
+    color: white;
+    padding: 90px 20px;
+    margin-top: 10px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .company-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Apex-Logo {
+    width: 150px;
+    height: 150px; 
+    margin-right: 10px;
+  }
+  
+  .company-details h2 {
+    margin: 0px;
+  }
+  
+  .footer-address {
+    margin-top: 10px;
+  }
+
+  .ph-no {
+    padding-top: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+  
