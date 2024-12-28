@@ -1,38 +1,48 @@
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import '../../App.css';
+import logo from "../../assets/images/Apex Logo.png";
 
-import { Link } from 'react-router-dom'
-import'../../App.css'
-import logo from "../../assets/images/Apex Logo.png"
+export default function NavBar() {
+  const [isSideNavVisible, setIsSideNavVisible] = useState(false);
+  console.log(isSideNavVisible)
 
-export default function navBar() {
+  const toggleSideNav = () => {
+    setIsSideNavVisible(!isSideNavVisible);
+  };
+
   return (
     <div>
-       {/* Header Start  */}
-  <header id="header" className="d-flex align-items-center">
-    <div className="container d-flex justify-content-between align-items-center">
+      {/* Header Start */}
+      <header id="header" className="d-flex align-items-center">
+        <div className="container d-flex justify-content-between align-items-center">
+          <div className="logo">
+            <a href="/">
+              <img src={logo} alt="Apex Logo" className="img-fluid" />
+            </a>
+          </div>
 
-      <div className="logo">
-        {/* <h1><a href="index.html">Apex</a></h1> */}
-        
-         <a href="index.html"><img src={logo} alt="" className="img-fluid"/></a>
-      </div>
+          {/* Mobile Toggle Icon */}
+          <i
+            className={`bi ${isSideNavVisible ? 'bi-x' : 'bi-list'} mobile-nav-toggle`}
+            onClick={toggleSideNav} 
+          ></i>
 
-      <nav id="navbar" className="navbar">
-        <ul>
-          <Link to="/"><li>Home</li></Link>
-          <Link to="/about"><li>About</li></Link>
-          <Link to="/business-insider"><li>Our Business</li></Link>
-          <Link to="/sustainablity"><li>Sustainablity</li></Link>
-          <Link to="/product"><li>Product and Services</li></Link>
-          <Link to="/career"><li>Career</li></Link>
-          <Link to="/contact"><li>Contact Us</li></Link>
-        </ul>
-        <i className="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-      {/* Navbar End  */}
-
+          {/* Navbar */}
+          <nav id="navbar" className={`navbar ${isSideNavVisible ? 'navbar-mobile' : ''}`}>
+            <ul>
+              <li><Link to="/" onClick={toggleSideNav}>Home</Link></li>
+              <li><Link to="/about" onClick={toggleSideNav}>About</Link></li>
+              <li><Link to="/business-insider" onClick={toggleSideNav}>Our Business</Link></li>
+              <li><Link to="/sustainability" onClick={toggleSideNav}>Sustainability</Link></li>
+              <li><Link to="/product" onClick={toggleSideNav}>Product and Services</Link></li>
+              <li><Link to="/career" onClick={toggleSideNav}>Career</Link></li>
+              <li><Link to="/contact" onClick={toggleSideNav}>Contact Us</Link></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      {/* END Header */}
     </div>
-  </header>
-  {/* END Header  */}
-    </div>
-  )
+  );
 }

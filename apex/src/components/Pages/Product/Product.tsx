@@ -21,9 +21,9 @@ function Product() {
               <li>
                 <a href="index.html">Home</a>
               </li>
-              <li> Product & Services</li>
+              <li>  Services</li>
             </ol>
-            <h2>Product & Services</h2>
+            <h2>Services</h2>
           </div>
         </section>
         {/* <!-- End Breadcrumbs --> */}
@@ -38,11 +38,10 @@ function Product() {
                     <i className="bx bxl-dribbble"></i>
                   </div>
                   <h4>
-                    <a href="">Lorem Ipsum</a>
+                    <a href="">Engineering & Survey</a>
                   </h4>
                   <p>
-                    Voluptatum deleniti atque corrupti quos dolores et quas
-                    molestias excepturi
+                  Provides the precise measurement and mapping of land to aid in the planning, design, and construction of infrastructure projects.
                   </p>
                 </div>
               </div>
@@ -53,11 +52,10 @@ function Product() {
                     <i className="bx bx-file"></i>
                   </div>
                   <h4>
-                    <a href="">Sed ut perspiciatis</a>
+                    <a href="">Architecture</a>
                   </h4>
                   <p>
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore
+                  Focuses on integrating aesthetic design with structural functionality to create efficient and visually appealing infrastructure and buildings.
                   </p>
                 </div>
               </div>
@@ -68,11 +66,10 @@ function Product() {
                     <i className="bx bx-tachometer"></i>
                   </div>
                   <h4>
-                    <a href="">Magni Dolores</a>
+                    <a href="">PMC</a>
                   </h4>
                   <p>
-                    Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia
+                  Ensures the efficient planning, execution, and delivery of construction projects by overseeing quality, timelines, and resources.
                   </p>
                 </div>
               </div>
@@ -83,11 +80,10 @@ function Product() {
                     <i className="bx bx-world"></i>
                   </div>
                   <h4>
-                    <a href="">Nemo Enim</a>
+                    <a href="">Quality & Testing </a>
                   </h4>
                   <p>
-                    At vero eos et accusamus et iusto odio dignissimos ducimus
-                    qui blanditiis
+                  Ensures that construction materials and processes meet specified standards and durability requirements for safe and reliable infrastructure.
                   </p>
                 </div>
               </div>
@@ -98,11 +94,10 @@ function Product() {
                     <i className="bx bx-slideshow"></i>
                   </div>
                   <h4>
-                    <a href="">Dele cardo</a>
+                    <a href="">Liaisoning and NOC</a>
                   </h4>
                   <p>
-                    Quis consequatur saepe eligendi voluptatem consequatur dolor
-                    consequuntur
+                  Liaisoning and NOC (No Objection Certificate) involve coordinating with government authorities to obtain necessary approvals and clearances for construction projects.
                   </p>
                 </div>
               </div>
@@ -113,16 +108,16 @@ function Product() {
                     <i className="bx bx-arch"></i>
                   </div>
                   <h4>
-                    <a href="">Divera don</a>
+                    <a href="">Construction</a>
                   </h4>
                   <p>
-                    Modi nostrum vel laborum. Porro fugit error sit minus
-                    sapiente sit aspernatur
+                  Involves the execution of designs to build infrastructure such as buildings, bridges, roads, and dams, ensuring structural integrity and compliance with standards.
                   </p>
                 </div>
               </div>
+              </div>
             </div>
-          </div>
+          
         </section>
         {/* <!-- End Services Section --> */}
 

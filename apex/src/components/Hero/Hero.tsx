@@ -14,9 +14,9 @@ function Hero() {
           <div className="carousel-item active" style={{backgroundImage:'url(https://static.vecteezy.com/system/resources/thumbnails/002/016/989/original/the-interior-of-a-large-office-free-video.jpg)'}}>
             <div className="carousel-container">
               <div className="carousel-content">
-                <h2 className="animate__animated animate__fadeInDown" style={{color:'#fff'}}>Welcome to <span>APEX</span></h2>
-                <p className="animate__animated animate__fadeInUp asus"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad modi pariatur, maxime, delectus vitae ratione cupiditate aperiam a error sunt vero quam quae nam facilis. Quis iste vitae libero sunt! </p>
-                <a href="" className="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+                <h2 className="animate__animated animate__fadeInDown" style={{color:'#fff'}}>Welcome to <span>Apex Engineers And Consultants Private Limited</span></h2>
+                <p className="animate__animated animate__fadeInUp asus"> Apex Engineers And Consultants Pvt. Ltd is the emerging consultancy company having group of consultants and expert dealing in Engineering, Quality and  testing, Architecture, and Quality construction. </p>
+                <a href="/about" className="btn-get-started animate__animated animate__fadeInUp">Read More</a>
               </div>
             </div>
           </div>

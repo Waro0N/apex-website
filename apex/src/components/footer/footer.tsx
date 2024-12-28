@@ -58,14 +58,13 @@ const Footer = () => {
             <div className="col-lg-3 col-md-6 footer-contact">
               <h4>Contact Us</h4>
               <p>
-                300/23 Pashchimpuri <br />
-                Sikandra, UP 282007
+              SNP43/ 80A & 80A/1, Shashi nagar, Near Anna ikon Building,Sikandra, Agra
                 <br />
                 India <br />
                 <br />
-                <strong>Phone:</strong> +91 8755 6163 37
+                <strong>Phone:</strong> +91 7983213124
                 <br />
-                <strong>Email:</strong> saransh@gmail.com
+                <strong>Email:</strong> Apex_agra@yahoo.com
                 <br />
               </p>
             </div>

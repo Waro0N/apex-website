@@ -80,15 +80,30 @@ function Homepage() {
                 <img src={About} className="img-fluid" alt="" />
               </div>
               <div className="col-lg-6 pt-4 pt-lg-0 content">
-                <h3>
-                  Voluptatem dignissimos provident quasi corporis voluptates sit
-                  assumenda.
+              <h3>
+                  Welcome to <span style={{color: '#7ea13d'}}>Apex Engineers And Consultants Private Limited </span>
                 </h3>
                 <p className="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Apex Engineers And Consultants Pvt. Ltd is the emerging consultancy company having group of consultants and expert dealing in Engineering, Quality and  testing, Architecture, and Quality construction. With the successful 23 years in the industry while dealing in the sectors of consultancy Apex Engineers And Consultants Pvt. Ltd.   aligns technology solutions with your business and engineering objectives.
+
+
                 </p>
-                <ul>
+                <p className="fst-italic">
+
+                  Our team of consultants - We are the team of consultats, engineers, architect and associated experts for specific expert field, drawn from leading business will help transform your engineering operations through process improvement initiatives.
+
+
+                </p>
+                <p className="fst-italic">
+
+                Using advanced tools and applications, along with proven business and integration, our strategic engineering consulting services have helped many leading manufacturers achieve business breakthroughs. Provides design and development solutions to reduce costs through value engineering.
+
+                </p>
+                <p className="fst-italic">
+
+                From inception to completion, we plan, execute, and control projects backed by proactive planning and first-hand knowledge of contract terms, client objectives, responsibilities, and capabilities. Adept technical and human resources are pooled to forge effective project organization structures.
+                </p>
+                {/* <ul>
                   <li>
                     <i className="bi bi-check-circle"></i> Ullamco laboris nisi
                     ut aliquip ex ea commodo consequat.
@@ -103,14 +118,7 @@ function Homepage() {
                     reprehenderit in voluptate trideta storacalaperda mastiro
                     dolore eu fugiat nulla pariatur.
                   </li>
-                </ul>
-                <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                  aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat non proident, sunt in culpa qui officia
-                  deserunt mollit anim id est laborum
-                </p>
+                </ul> */}
               </div>
             </div>
           </div>
@@ -127,11 +135,10 @@ function Homepage() {
                     <i className="bx bxl-dribbble"></i>
                   </div>
                   <h4>
-                    <a href="">Lorem Ipsum</a>
+                    <a href="">Engineering & Survey</a>
                   </h4>
                   <p>
-                    Voluptatum deleniti atque corrupti quos dolores et quas
-                    molestias excepturi
+                  Provides the precise measurement and mapping of land to aid in the planning, design, and construction of infrastructure projects.
                   </p>
                 </div>
               </div>
@@ -142,11 +149,10 @@ function Homepage() {
                     <i className="bx bx-file"></i>
                   </div>
                   <h4>
-                    <a href="">Sed ut perspiciatis</a>
+                    <a href="">Architecture</a>
                   </h4>
                   <p>
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore
+                  Focuses on integrating aesthetic design with structural functionality to create efficient and visually appealing infrastructure and buildings.
                   </p>
                 </div>
               </div>
@@ -157,11 +163,10 @@ function Homepage() {
                     <i className="bx bx-tachometer"></i>
                   </div>
                   <h4>
-                    <a href="">Magni Dolores</a>
+                    <a href="">PMC</a>
                   </h4>
                   <p>
-                    Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia
+                  Ensures the efficient planning, execution, and delivery of construction projects by overseeing quality, timelines, and resources.
                   </p>
                 </div>
               </div>
@@ -172,11 +177,10 @@ function Homepage() {
                     <i className="bx bx-world"></i>
                   </div>
                   <h4>
-                    <a href="">Nemo Enim</a>
+                    <a href="">Quality & Testing </a>
                   </h4>
                   <p>
-                    At vero eos et accusamus et iusto odio dignissimos ducimus
-                    qui blanditiis
+                  Ensures that construction materials and processes meet specified standards and durability requirements for safe and reliable infrastructure.
                   </p>
                 </div>
               </div>
@@ -187,11 +191,10 @@ function Homepage() {
                     <i className="bx bx-slideshow"></i>
                   </div>
                   <h4>
-                    <a href="">Dele cardo</a>
+                    <a href="">Liaisoning and NOC</a>
                   </h4>
                   <p>
-                    Quis consequatur saepe eligendi voluptatem consequatur dolor
-                    consequuntur
+                  Liaisoning and NOC (No Objection Certificate) involve coordinating with government authorities to obtain necessary approvals and clearances for construction projects.
                   </p>
                 </div>
               </div>
@@ -202,16 +205,16 @@ function Homepage() {
                     <i className="bx bx-arch"></i>
                   </div>
                   <h4>
-                    <a href="">Divera don</a>
+                    <a href="">Construction</a>
                   </h4>
                   <p>
-                    Modi nostrum vel laborum. Porro fugit error sit minus
-                    sapiente sit aspernatur
+                  Involves the execution of designs to build infrastructure such as buildings, bridges, roads, and dams, ensuring structural integrity and compliance with standards.
                   </p>
                 </div>
               </div>
+              </div>
             </div>
-          </div>
+          
         </section>
         {/* <!-- End Services Section --> */}
 

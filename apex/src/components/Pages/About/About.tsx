@@ -53,14 +53,29 @@ function About() {
               </div>
               <div className="col-lg-6 pt-4 pt-lg-0 content">
                 <h3>
-                  Voluptatem dignissimos provident quasi corporis voluptates sit
-                  assumenda.
+                  Welcome to <span style={{color: '#7ea13d'}}>Apex Engineers And Consultants Private Limited </span>
                 </h3>
                 <p className="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Apex Engineers And Consultants Pvt. Ltd is the emerging consultancy company having group of consultants and expert dealing in Engineering, Quality and  testing, Architecture, and Quality construction. With the successful 23 years in the industry while dealing in the sectors of consultancy Apex Engineers And Consultants Pvt. Ltd.   aligns technology solutions with your business and engineering objectives.
+
+
                 </p>
-                <ul>
+                <p className="fst-italic">
+
+                  Our team of consultants - We are the team of consultats, engineers, architect and associated experts for specific expert field, drawn from leading business will help transform your engineering operations through process improvement initiatives.
+
+
+                </p>
+                <p className="fst-italic">
+
+                Using advanced tools and applications, along with proven business and integration, our strategic engineering consulting services have helped many leading manufacturers achieve business break throughs. Provides design and development solutions to reduce costs through value engineering.
+
+                </p>
+                <p className="fst-italic">
+
+                From inception to completion, we plan, execute, and control projects backed by proactive planning and first-hand knowledge of contract terms, client objectives, responsibilities, and capabilities. Adept technical and human resources are pooled to forge effective project organization structures.
+                </p>
+                {/* <ul>
                   <li>
                     <i className="bi bi-check-circle"></i> Ullamco laboris nisi
                     ut aliquip ex ea commodo consequat.
@@ -75,14 +90,14 @@ function About() {
                     reprehenderit in voluptate trideta storacalaperda mastiro
                     dolore eu fugiat nulla pariatur.
                   </li>
-                </ul>
-                <p>
+                </ul> */}
+                {/* <p>
                   Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
                   aute irure dolor in reprehenderit in voluptate velit esse
                   cillum dolore eu fugiat nulla pariatur. Excepteur sint
                   occaecat cupidatat non proident, sunt in culpa qui officia
                   deserunt mollit anim id est laborum
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
@@ -103,10 +118,10 @@ function About() {
                     className="purecounter"
                   ></span>
                   <p>
-                    <strong>Happy Clients</strong> consequuntur quae qui deca
-                    rode
+                    <strong style={{fontSize: 20}}>Vision Statement:</strong> <br/> To become the leading provider of innovative solutions, empowering businesses in integration with IT technology to thrive in a rapidly changing world.
+
                   </p>
-                  <a href="#">Find out more &raquo;</a>
+                  {/* <a href="#">Find out more &raquo;</a> */}
                 </div>
               </div>
 
@@ -120,10 +135,10 @@ function About() {
                     className="purecounter"
                   ></span>
                   <p>
-                    <strong>Projects</strong> adipisci atque cum quia aut
-                    numquam delectus
+                    <strong style={{fontSize: 20}}>Registrations:</strong> <br/> 1. NABL( IS:17025) <br/> 2. ISO:9001,2015
                   </p>
-                  <a href="#">Find out more &raquo;</a>
+                  
+                  {/* <a href="#0">Find out more &raquo;</a> */}
                 </div>
               </div>
 
@@ -164,6 +179,102 @@ function About() {
           </div>
         </section>
         {/* !-- End Counts Section -->  */}
+
+        <div className="section-title">
+              <h2> Our Resources</h2>
+        </div>
+        
+
+            <section id="counts" className="counts">
+          <div className="container">
+            <div className="row no-gutters">
+              <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+                <div className="count-box">
+                  {/* <i className="bi bi-emoji-smile"></i> */}
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="232"
+                    data-purecounter-duration="1"
+                    className="purecounter"
+                  ></span>
+                  <p>
+                    <strong style={{fontSize: 20}}>Human Resources:</strong> <strong><br/>1. <u>Engineering Consultants:</u></strong> Experienced professionals with expertise in specific engineering disciplines.<strong><br/>2. <u>Project Managers:</u></strong> Responsible for overseeing projects and ensuring timely delivery.
+                    <strong><br/>3. <u>Design Engineers:</u></strong> Responsible for designing and developing engineering solutions.<strong><br/>4. <u>Drafting Technicians:</u></strong> Assist in creating engineering drawings and models.
+                    <strong><br/>5. <u>Administrative Staff:</u></strong> Provide support with administrative tasks, such as HR, finance, and marketing
+                  </p>
+                  {/* <a href="#">Find out more &raquo;</a> */}
+                </div>
+              </div>
+
+              <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+                <div className="count-box">
+                  {/* <i className="bi bi-journal-richtext"></i> */}
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="521"
+                    data-purecounter-duration="1"
+                    className="purecounter"
+                  ></span>
+                  <p>
+                  <strong style={{fontSize: 20}}>Physical Resources:</strong>  <strong><br/>1. <u>Office Space:</u></strong> Physical offices, meeting rooms, and other facilities having total carpet aread about 5000 sqft.
+                    <strong><br/>2. <u>Engineering Laboratories(NABL accrediated):</u></strong> Facilities for quality testing and validating engineering solutions.
+                    <strong><br/>3. <u>Equipment and Instrumentation:</u></strong> Specialized equipment and instruments for engineering(Auto levels, Total Station Machines), design, testing, and analysis.
+                    <strong><br/>4. <u>Vehicle Fleet:</u></strong> Company-owned vehicles for site visits, meetings, and other business purposes.
+
+                  </p>
+                  {/* <a href="#0">Find out more &raquo;</a> */}
+                </div>
+              </div>
+
+              <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+                <div className="count-box">
+                  {/* <i className="bi bi-headset"></i> */}
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="1463"
+                    data-purecounter-duration="1"
+                    className="purecounter"
+                  ></span>
+                  <p>
+                    <strong style={{fontSize: 20}}>Technological Resources</strong> 
+                    <strong><br/>1. <u> Computer-Aided Design (CAD) Systems:</u></strong>  Software and hardware for designing and modeling engineering solutions.
+                    <strong><br/>2. <u>Computational Fluid Dynamics (CFD) and Finite Element Analysis (FEA) Tools:</u></strong> Software for simulating and analyzing complex engineering problems.
+                    <strong><br/>3. <u>Building Information Modeling (BIM) Software:</u></strong>  Software for creating and managing digital models of buildings and infrastructure.
+                    <strong><br/>4. <u>Geographic Information Systems (GIS):</u></strong> Software for analyzing and visualizing geospatial data.
+                    <strong><br/>5. <u>Cloud-Based Collaboration Tools:</u></strong>Software for collaborating and sharing data with clients and team members.
+                  </p>
+                  {/* <a href="#">Find out more &raquo;</a> */}
+                </div>
+              </div>
+
+              <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+                <div className="count-box">
+                  {/* <i className="bi bi-people"></i> */}
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="15"
+                    data-purecounter-duration="1"
+                    className="purecounter"
+                  ></span>
+                  <p>
+                    <strong style={{fontSize: 20}}>Our Associations</strong> 
+                    <strong><br/>1. <u> Professional Associations:</u></strong>  Memberships in industry-specific associations.
+                    <strong><br/>2. <u>Partnerships:</u></strong> Strategic alliances with other companies, organizations, or industry experts.
+                    <strong><br/>3. <u>Alumni Network:</u></strong>  Connections with former employees, clients, and partners.
+                  </p>
+                  {/* <a href="#">Find out more &raquo;</a> */}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+
+
 
         {/* <!-- ======= Clients Section ======= --> */}
         <section id="clients" className="clients">

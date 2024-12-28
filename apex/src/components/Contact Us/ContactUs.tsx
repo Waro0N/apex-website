@@ -33,8 +33,7 @@ const ContactUs = () => {
                   <i className="bx bx-map"></i>
                   <h3>Our Address</h3>
                   <p>
-                    Rishipuram Colony, Lohamandi, Agra, Uttar Pradesh 282007,
-                    India
+                  SNP43/ 80A & 80A/1, Shashi nagar, Near Anna ikon Building,Sikandra, Agra
                   </p>
                 </div>
               </div>
@@ -43,7 +42,7 @@ const ContactUs = () => {
                 <div className="info-box  mb-4">
                   <i className="bx bx-envelope"></i>
                   <h3>Email Us</h3>
-                  <p>saransh@gmail.com</p>
+                  <p>Apex_agra@yahoo.com</p>
                 </div>
               </div>
 
@@ -51,7 +50,7 @@ const ContactUs = () => {
                 <div className="info-box  mb-4">
                   <i className="bx bx-phone-call"></i>
                   <h3>Call Us</h3>
-                  <p>+91 875 561 6337</p>
+                  <p>+91 7983213124</p>
                 </div>
               </div>
             </div>
