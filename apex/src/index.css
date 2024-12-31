@@ -822,8 +822,11 @@ body {
   .clients .swiper-pagination .swiper-pagination-bullet-active {
     background-color: #7ea13d;
   }
+  img {
+    background-color: transparent;
+  }
   
-  .clients .swiper-slide img {
+  .clients .swiper-slide {
     opacity: 0.5;
     transition: 0.3s;
     filter: grayscale(100);
