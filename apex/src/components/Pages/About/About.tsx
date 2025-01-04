@@ -14,6 +14,7 @@ import client5 from "../../../assets/images/clients/client-5.png";
 import client6 from "../../../assets/images/clients/client-6.png";
 import client7 from "../../../assets/images/clients/client-7.png";
 import client8 from "../../../assets/images/clients/client-8.png";
+import client9 from "../../../assets/images/clients/client-9.png";
 
 // Testimonials
 import testimonials1 from "../../../assets/images/testimonials/testimonials-1.jpg";
@@ -281,49 +282,24 @@ function About() {
           <div className="container">
             <div className="section-title">
               <h2>Clients</h2>
-              <p>
-                Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-                ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-                quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-                Quia fugiat sit in iste officiis commodi quidem hic quas.
-              </p>
             </div>
-
-            <div className="clients-slider swiper">
-              <div className="swiper-wrapper align-items-center">
-                <div className="swiper-slide">
-                  <img src={client1} className="img-fluid" alt="" />
-                </div>
-                <div className="swiper-slide">
-                  <img src={client2} className="img-fluid" alt="" />
-                </div>
-                <div className="swiper-slide">
-                  <img src={client3} className="img-fluid" alt="" />
-                </div>
-                <div className="swiper-slide">
-                  <img src={client4} className="img-fluid" alt="" />
-                </div>
-                <div className="swiper-slide">
-                  <img src={client5} className="img-fluid" alt="" />
-                </div>
-                <div className="swiper-slide">
-                  <img src={client6} className="img-fluid" alt="" />
-                </div>
-                <div className="swiper-slide">
-                  <img src={client7} className="img-fluid" alt="" />
-                </div>
-                <div className="swiper-slide">
-                  <img src={client8} className="img-fluid" alt="" />
-                </div>
-              </div>
-              <div className="swiper-pagination"></div>
+            <div className="clients-grid">
+              <img src={client1} height="150px" alt="Bharat Petroleum" />
+              <img src={client2} height="150px" alt="Hindustan Petroleum" />
+              <img src={client3} height="150px" alt="Indian Oil" />
+              <img src={client4} height="150px" alt="IGL" />
+              <img src={client5} height="150px" alt="Another Client" />
+              <img src={client6} className="small-logo" alt="Smaller Client" />
+              <img src={client7} height="150px" alt="Another Client" />
+              <img src={client8} className="small-logo" alt="Smaller Client" />
+              <img src={client9} height="150px" alt="Gail Gas" />
             </div>
           </div>
         </section>
         {/* <!-- End Clients Section --> */}
 
         {/* <!-- ======= Testimonials Section ======= --> */}
-        <section id="testimonials" className="testimonials">
+        {/* <section id="testimonials" className="testimonials">
           <div className="container">
             <div className="section-title">
               <h2>Testimonials</h2>
@@ -432,7 +408,7 @@ function About() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         {/* <!-- End Testimonials Section --> */}
       </main>
 

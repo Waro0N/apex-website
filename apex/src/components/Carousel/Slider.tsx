@@ -9,7 +9,7 @@ function Slider() {
     <Carousel>
     <Carousel.Item style={{ height:''}}>
       <img className='d-block w-100' src={image1} alt='First slide' style={{
-        filter:'brightness(15%)',
+        filter:'brightness(25%)',
         height:'400px'
       }}/>
       <Carousel.Caption style={{
@@ -20,8 +20,8 @@ function Slider() {
         transform: "translate(-50%,-50%)"
         
       }}>
-              <h3 className="animate__animated animate__fadeInDown" >First slide label</h3>
-         <p className="animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h3 className="animate__animated animate__fadeInDown" >"Your Vision, Our Expertise, Perfectly Engineered."</h3>
+         <p className="animate__animated animate__fadeInUp"></p>
       
               </Carousel.Caption>
     </Carousel.Item>
@@ -29,7 +29,7 @@ function Slider() {
     
     <Carousel.Item>
     <img className='d-block w-100' src={image2} alt='2nd slide'style={{
-        filter:'brightness(15%)',
+        filter:'brightness(25%)',
         height:'400px'
       }}/>
       <Carousel.Caption style={{
@@ -40,13 +40,13 @@ function Slider() {
         transform: "translate(-50%,-50%)"
         
       }}>
-        <h3 className="animate__animated animate__fadeInDown" >Second slide label</h3>
-        <p className="animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h3 className="animate__animated animate__fadeInDown" >"Strong Foundations for a Better Tomorrow."</h3>
+        <p className="animate__animated animate__fadeInUp"></p>
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
     <img className='d-block w-100' src={image3} alt='3rd slide'style={{
-        filter:'brightness(15%)',
+        filter:'brightness(25%)',
         height:'400px'
       }}/>
       <Carousel.Caption style={{
@@ -57,9 +57,8 @@ function Slider() {
         transform: "translate(-50%,-50%)"
         
       }}>
-        <h3 className="animate__animated animate__fadeInDown">Third slide label</h3>
+        <h3 className="animate__animated animate__fadeInDown">"Where Innovation Meets Construction."</h3>
         <p className="animate__animated animate__fadeInUp">
-          Praesent commodo cursus magna, vel scelerisque nisl consectetur.
         </p>
       </Carousel.Caption>
     </Carousel.Item>
