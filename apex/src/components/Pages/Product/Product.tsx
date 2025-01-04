@@ -14,6 +14,8 @@ function Product() {
 
       {/* Main Start  */}
       <main id="main" style={{ background: "#fff" }}>
+
+
         {/* <!-- ======= Breadcrumbs ======= --> */}
         <section id="breadcrumbs" className="breadcrumbs">
           <div className="container">
@@ -122,7 +124,7 @@ function Product() {
         {/* <!-- End Services Section --> */}
 
         {/* <!-- ======= Our Skills Section ======= --> */}
-        <section id="skills" className="skills">
+        {/* <section id="skills" className="skills">
           <div className="container">
             <div className="section-title">
               <h2>Our Skills</h2>
@@ -215,7 +217,7 @@ function Product() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         {/* <!-- End Our Skills Section --> */}
       </main>
 

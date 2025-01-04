@@ -1,8 +1,38 @@
-import TopBar from "../TopBar/TopBar.tsx";
-import NavBar from "../NavBar/NavBar.tsx";
-import Footer from "../footer/footer";
+import React from "react";
+import TopBar from "../../components/TopBar/TopBar.tsx";
+import NavBar from "../../components/NavBar/NavBar.tsx";
+import Footer from "../../components/footer/footer.tsx";
+import { send } from "@emailjs/browser";
+
 
 const ContactUs = () => {
+
+  const [name, setName] = React.useState<string>("")
+  const [email, setEmail] = React.useState<string>('')
+  const [subject, setSubject] = React.useState<string>('')
+  const [userMessage, setUserMessage] = React.useState<string>('')
+
+
+  const handleContactUs = () => {
+    
+    const templateParams = {
+      to_name: "APEX",
+      from_name: name,
+      reply_to: email,
+      subject: subject,
+      message: userMessage,
+    };
+  
+    send("apex_mail", "template_qbjowla", templateParams, "MVi1YIwmU0ITlFbz9")
+      .then((response) => {
+        console.log("Email sent successfully!", response);
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+      });
+  }
+
+
   return (
     <>
       <TopBar />
@@ -66,15 +96,14 @@ const ContactUs = () => {
               </div>
 
               <div className="col-lg-6">
-                <form
-                  action="forms/contact.php"
-                  method="post"
-                  role="form"
+                {/* <form
+                  onSubmit={handleContactUs}
                   className="php-email-form"
-                >
+                > */}
                   <div className="row">
                     <div className="col-md-6 form-group">
                       <input
+                        onChange={((e) => setName(e.target.value))}
                         type="text"
                         name="name"
                         className="form-control"
@@ -85,6 +114,7 @@ const ContactUs = () => {
                     </div>
                     <div className="col-md-6 form-group mt-3 mt-md-0">
                       <input
+                      onChange={((e) => setEmail(e.target.value))}
                         type="email"
                         className="form-control"
                         name="email"
@@ -96,6 +126,7 @@ const ContactUs = () => {
                   </div>
                   <div className="form-group mt-3">
                     <input
+                    onChange={((e) => setSubject(e.target.value))}
                       type="text"
                       className="form-control"
                       name="subject"
@@ -106,6 +137,7 @@ const ContactUs = () => {
                   </div>
                   <div className="form-group mt-3">
                     <textarea
+                    onChange={((e) => setUserMessage(e.target.value))}
                       className="form-control"
                       name="message"
                       rows={6}
@@ -113,17 +145,17 @@ const ContactUs = () => {
                       required
                     ></textarea>
                   </div>
-                  <div className="my-3">
+                  {/* <div className="my-3">
                     <div className="loading">Loading</div>
                     <div className="error-message"></div>
                     <div className="sent-message">
                       Your message has been sent. Thank you!
                     </div>
-                  </div>
+                  </div> */}
                   <div className="text-center">
-                    <button type="submit">Send Message</button>
+                    <button onClick={handleContactUs} type="submit">Send Message</button>
                   </div>
-                </form>
+                {/* </form> */}
               </div>
             </div>
           </div>

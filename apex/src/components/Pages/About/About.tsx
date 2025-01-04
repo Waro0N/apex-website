@@ -299,7 +299,7 @@ function About() {
         {/* <!-- End Clients Section --> */}
 
         {/* <!-- ======= Testimonials Section ======= --> */}
-        <section id="testimonials" className="testimonials">
+        {/* <section id="testimonials" className="testimonials">
           <div className="container">
             <div className="section-title">
               <h2>Testimonials</h2>
@@ -408,7 +408,7 @@ function About() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         {/* <!-- End Testimonials Section --> */}
       </main>
 

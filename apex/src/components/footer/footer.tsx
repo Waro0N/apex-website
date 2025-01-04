@@ -8,23 +8,23 @@ const Footer = () => {
               <h4>Useful Links</h4>
               <ul>
                 <li>
-                  <i className="bx bx-chevron-right"></i> <a href="#">Home</a>
+                  <i className="bx bx-chevron-right"></i> <a href="/Homepage">Home</a>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="#">About us</a>
+                  <a href="/About">About us</a>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="#">Services</a>
+                  <a href="/Product">Services</a>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="#">Terms of service</a>
+                  <a href="/Career">Career</a>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="#">Privacy policy</a>
+                  <a href="/Contact Us">Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -34,23 +34,27 @@ const Footer = () => {
               <ul>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="#">Web Design</a>
+                  <a href="/Product">Engineering & Survey</a>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="#">Web Development</a>
+                  <a href="/Product">Architecture</a>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="#">Product Management</a>
+                  <a href="/Product">PMC</a>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="#">Marketing</a>
+                  <a href="/Product">Quality & Testing </a>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="#">Graphic Design</a>
+                  <a href="/Product">Liasioning and NOC</a>
+                </li>
+                <li>
+                  <i className="bx bx-chevron-right"></i>{" "}
+                  <a href="/Product">Construction</a>
                 </li>
               </ul>
             </div>
@@ -72,12 +76,10 @@ const Footer = () => {
             <div className="col-lg-3 col-md-6 footer-info">
               <h3>About Apexma</h3>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Voluptate dolore vel, odit, ipsam at, consequatur eos quos omnis
-                fugit deserunt cupiditate quidem.
+              Apex Engineers And Consultants Pvt. Ltd is the emerging consultancy company having group of consultants and expert dealing in Engineering, Quality and  testing, Architecture, and Quality construction.
               </p>
               <div className="social-links mt-3">
-                <a href="#" className="twitter">
+                {/* <a href="#" className="twitter">
                   <i className="bx bxl-twitter"></i>
                 </a>
                 <a href="#" className="facebook">
@@ -88,8 +90,8 @@ const Footer = () => {
                 </a>
                 <a href="#" className="google-plus">
                   <i className="bx bxl-skype"></i>
-                </a>
-                <a href="#" className="linkedin">
+                </a> */}
+                <a href="https://www.linkedin.com/company/apex-engineers-and-consultants/" className="linkedin">
                   <i className="bx bxl-linkedin"></i>
                 </a>
               </div>

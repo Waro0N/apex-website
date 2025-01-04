@@ -8,11 +8,11 @@ import client7 from "../../assets/images/clients/client-7.png";
 import client8 from "../../assets/images/clients/client-8.png";
 import client9 from "../../assets/images/clients/client-9.png";
 import About from "../../assets/images/about.jpg";
-import Slider from "../Carousel/Slider";
+import Slider from "../Carousel/Slider.tsx";
 import TopBar from "../TopBar/TopBar.tsx";
 import NavBar from "../NavBar/NavBar.tsx";
 import Hero from "../Hero/Hero.tsx";
-import Footer from "../footer/footer";
+import Footer from "../footer/footer.tsx";
 import "../Homepage/Homepage.css";
 
 
