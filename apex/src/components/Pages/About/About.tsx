@@ -17,12 +17,12 @@ import client8 from "../../../assets/images/clients/client-8.png";
 import client9 from "../../../assets/images/clients/client-9.png";
 
 // Testimonials
-import testimonials1 from "../../../assets/images/testimonials/testimonials-1.jpg";
-import testimonials2 from "../../../assets/images/testimonials/testimonials-2.jpg";
-import testimonials3 from "../../../assets/images/testimonials/testimonials-3.jpg";
-import testimonials4 from "../../../assets/images/testimonials/testimonials-4.jpg";
-import testimonials5 from "../../../assets/images/testimonials/testimonials-5.jpg";
-import testimonials6 from "../../../assets/images/testimonials/testimonials-6.jpg";
+// import testimonials1 from "../../../assets/images/testimonials/testimonials-1.jpg";
+// import testimonials2 from "../../../assets/images/testimonials/testimonials-2.jpg";
+// import testimonials3 from "../../../assets/images/testimonials/testimonials-3.jpg";
+// import testimonials4 from "../../../assets/images/testimonials/testimonials-4.jpg";
+// import testimonials5 from "../../../assets/images/testimonials/testimonials-5.jpg";
+// import testimonials6 from "../../../assets/images/testimonials/testimonials-6.jpg";
 
 function About() {
   return (

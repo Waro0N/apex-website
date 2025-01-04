@@ -4,7 +4,7 @@ import TopBar from "../../TopBar/TopBar";
 import NavBar from "../../NavBar/NavBar";
 import jobOpenings from "../../../data/jobOpenings.json";
 import "../Career/Career.css"
-import React from "react";
+// import React from "react";
 
 // interface Jobs {
 //     jobTitle:string;
