@@ -4,7 +4,7 @@ import NavBar from "../../NavBar/NavBar.tsx";
 
 // Image Import
 
-import skill from "../../../assets/images/skills-img.jpg";
+// import skill from "../../../assets/images/skills-img.jpg";
 
 function Product() {
   return (
