@@ -16,23 +16,28 @@ const Footer = () => {
               <h4>Useful Links</h4>
               <ul>
                 <li>
-                  <i className="bx bx-chevron-right"></i> <a href="/">Home</a>
+                  <i className="bx bx-chevron-right"></i>{" "}
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="/about">About us</a>
+                  {/* <a href="/about">About us</a> */}
+                  <Link to="/about">About us</Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="/services">Services</a>
+                  {/* <a href="/services">Services</a> */}
+                  <Link to="/services">Services</Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="/career">Career</a>
+                  {/* <a href="/career">Career</a> */}
+                  <Link to="/career">Career</Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="/contact">Contact Us</a>
+                  {/* <a href="/contact">Contact Us</a> */}
+                  <Link to="/contact">Contact Us</Link>
                 </li>
               </ul>
             </div>
