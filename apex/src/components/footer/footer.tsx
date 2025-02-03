@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   const handleLinkedInClick = () => {
     window.open(
@@ -40,27 +42,33 @@ const Footer = () => {
               <ul>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="/services">Engineering & Survey</a>
+                  {/* <a href="/services">Engineering & Survey</a> */}
+                  <Link to="/services">Engineering & Survey</Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="/services">Architecture</a>
+                  <Link to="/services">Architecture</Link>
+                  {/* <a href="/services">Architecture</a> */}
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="/services">PMC</a>
+                  <Link to="/services">PMC</Link>
+                  {/* <a href="/services">PMC</a> */}
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="/services">Quality & Testing </a>
+                  <Link to="/services">Quality & Testing </Link>
+                  {/* <a href="/services">Quality & Testing </a> */}
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="/services">Liasioning and NOC</a>
+                  <Link to="/services">Liasioning and NOC</Link>
+                  {/* <a href="/services">Liasioning and NOC</a> */}
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="/services">Construction</a>
+                  <Link to="/services">Construction</Link>
+                  {/* <a href="/services">Construction</a> */}
                 </li>
               </ul>
             </div>
