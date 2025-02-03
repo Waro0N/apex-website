@@ -1,9 +1,10 @@
 import Footer from "../../footer/footer";
-import TopBar from "../../TopBar/TopBar.tsx";
+// import TopBar from "../../TopBar/TopBar.tsx";
 import NavBar from "../../NavBar/NavBar.tsx";
 
 // Import Images
 import AboutImg from "../../../assets/images/about.jpg";
+import Carousel from "react-bootstrap/Carousel";
 
 // Clients
 import client1 from "../../../assets/images/clients/client-1.png";
@@ -24,10 +25,29 @@ import client9 from "../../../assets/images/clients/client-9.png";
 // import testimonials5 from "../../../assets/images/testimonials/testimonials-5.jpg";
 // import testimonials6 from "../../../assets/images/testimonials/testimonials-6.jpg";
 
+const clients = [
+  { src: client1, alt: "Bharat Petroleum" },
+  { src: client2, alt: "Hindustan Petroleum" },
+  { src: client3, alt: "Indian Oil" },
+  { src: client4, alt: "IGL" },
+  { src: client5, alt: "Another Client" },
+  { src: client6, alt: "Smaller Client" },
+  { src: client7, alt: "Another Client" },
+  { src: client8, alt: "Smaller Client" },
+  { src: client9, alt: "Gail Gas" },
+];
+
 function About() {
+  const chunkSize = 3;
+  const slides = [];
+
+  for (let i = 0; i < clients.length; i += chunkSize) {
+    slides.push(clients.slice(i, i + chunkSize));
+  }
+
   return (
     <>
-      <TopBar />
+      {/* <TopBar /> */}
       <NavBar />
 
       {/* Main Section Start  */}
@@ -54,27 +74,46 @@ function About() {
               </div>
               <div className="col-lg-6 pt-4 pt-lg-0 content">
                 <h3>
-                  Welcome to <span style={{color: '#7ea13d'}}>Apex Engineers And Consultants Private Limited </span>
+                  Welcome to{" "}
+                  <span style={{ color: "#7ea13d" }}>
+                    Apex Engineers And Consultants Private Limited{" "}
+                  </span>
                 </h3>
                 <p className="fst-italic">
-                  Apex Engineers And Consultants Pvt. Ltd is the emerging consultancy company having group of consultants and expert dealing in Engineering, Quality and  testing, Architecture, and Quality construction. With the successful 23 years in the industry while dealing in the sectors of consultancy Apex Engineers And Consultants Pvt. Ltd.   aligns technology solutions with your business and engineering objectives.
-
-
+                  <b>
+                    Apex Engineers and Consultants Pvt. Ltd. : Your Trusted
+                    Partner in Engineering and Quality Excellence.{" "}
+                  </b>
                 </p>
                 <p className="fst-italic">
-
-                  Our team of consultants - We are the team of consultats, engineers, architect and associated experts for specific expert field, drawn from leading business will help transform your engineering operations through process improvement initiatives.
-
-
+                  <b>
+                    With over 23 years of industry expertise, Apex Engineers and
+                    Consultants Pvt. Ltd. has emerged as a leading consultancy
+                    company specializing in Civil Engineering, Architecture,
+                    Quality Testing, and Quality Construction. Our mission is to
+                    deliver tailored engineering and consultancy solutions that
+                    align with your business goals and engineering needs.
+                  </b>
                 </p>
                 <p className="fst-italic">
-
-                Using advanced tools and applications, along with proven business and integration, our strategic engineering consulting services have helped many leading manufacturers achieve business break throughs. Provides design and development solutions to reduce costs through value engineering.
-
+                  <b>
+                    Using advanced tools and applications, along with proven
+                    business and integration, our strategic engineering
+                    consulting services have helped many leading manufacturers
+                    achieve business breakthroughs. Provides design and
+                    development solutions to reduce costs through value
+                    engineering.
+                  </b>
                 </p>
                 <p className="fst-italic">
-
-                From inception to completion, we plan, execute, and control projects backed by proactive planning and first-hand knowledge of contract terms, client objectives, responsibilities, and capabilities. Adept technical and human resources are pooled to forge effective project organization structures.
+                  <b>
+                    From inception to completion, we plan, execute, and control
+                    projects backed by proactive planning and first-hand
+                    knowledge of contract terms, client objectives,
+                    responsibilities, and capabilities. Adept technical and
+                    human resources are pooled to forge effective project
+                    organization structures.
+                  </b>
                 </p>
                 {/* <ul>
                   <li>
@@ -110,8 +149,8 @@ function About() {
           <div className="container">
             <div className="row no-gutters">
               <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-                <div className="count-box">
-                  <i className="bi bi-emoji-smile"></i>
+                <div className="holographic-card">
+                  <i style={{ fontSize: 30 }} className="bi bi-emoji-smile"></i>
                   <span
                     data-purecounter-start="0"
                     data-purecounter-end="232"
@@ -119,16 +158,21 @@ function About() {
                     className="purecounter"
                   ></span>
                   <p>
-                    <strong style={{fontSize: 20}}>Vision Statement:</strong> <br/> To become the leading provider of innovative solutions, empowering businesses in integration with IT technology to thrive in a rapidly changing world.
-
+                    <strong style={{ fontSize: 20 }}>Vision Statement:</strong>{" "}
+                    <br /> <br /> To become the leading provider of innovative
+                    solutions, empowering businesses in integration with IT
+                    technology to thrive in a rapidly changing world.
                   </p>
                   {/* <a href="#">Find out more &raquo;</a> */}
                 </div>
               </div>
 
               <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-                <div className="count-box">
-                  <i className="bi bi-journal-richtext"></i>
+                <div className="holographic-card">
+                  <i
+                    style={{ fontSize: 30 }}
+                    className="bi bi-journal-richtext"
+                  ></i>
                   <span
                     data-purecounter-start="0"
                     data-purecounter-end="521"
@@ -136,16 +180,24 @@ function About() {
                     className="purecounter"
                   ></span>
                   <p>
-                    <strong style={{fontSize: 20}}>Registrations:</strong> <br/> 1. NABL( IS:17025) <br/> 2. ISO:9001,2015
+                    <strong style={{ fontSize: 20 }}>Registrations : </strong>{" "}
+                    <br /> <br />{" "}
+                    <b>Apex Engineers and Consultants Pvt. Ltd.</b> is proudly
+                    accredited with <b>NABL (IS:17025)</b> certification,
+                    ensuring the highest standards in quality testing and
+                    calibration. <br /> Additionally, we are certified with{" "}
+                    <b>ISO 9001:2015</b>, demonstrating our commitment to
+                    maintaining consistent quality management and delivering
+                    exceptional services in every project we undertake.
                   </p>
-                  
+
                   {/* <a href="#0">Find out more &raquo;</a> */}
                 </div>
               </div>
 
               <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-                <div className="count-box">
-                  <i className="bi bi-headset"></i>
+                <div className="holographic-card">
+                  <i style={{ fontSize: 30 }} className="bi bi-headset"></i>
                   <span
                     data-purecounter-start="0"
                     data-purecounter-end="1463"
@@ -153,16 +205,23 @@ function About() {
                     className="purecounter"
                   ></span>
                   <p>
-                    <strong>Hours Of Support</strong> aut commodi quaerat.
-                    Aliquam ratione
+                    <strong style={{ fontSize: 20 }}>Hours Of Support :</strong>{" "}
+                    <br />
+                    <br />
+                    We understand the importance of timely assistance in
+                    engineering projects. Our dedicated team is available 24/7
+                    to provide technical guidance, project updates, and
+                    troubleshooting support. Whether it's a query about
+                    structural design, material selection, or project execution,
+                    we are always here to help.
                   </p>
-                  <a href="#">Find out more &raquo;</a>
+                  {/* <a href="#">Find out more &raquo;</a> */}
                 </div>
               </div>
 
               <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-                <div className="count-box">
-                  <i className="bi bi-people"></i>
+                <div className="holographic-card">
+                  <i style={{ fontSize: 30 }} className="bi bi-people"></i>
                   <span
                     data-purecounter-start="0"
                     data-purecounter-end="15"
@@ -170,10 +229,17 @@ function About() {
                     className="purecounter"
                   ></span>
                   <p>
-                    <strong>Hard Workers</strong> rerum asperiores dolor
-                    molestiae doloribu
+                    <strong style={{ fontSize: 20 }}>Hard Workers :</strong>
+                    <br />
+                    <br />
+                    Our team of skilled engineers, designers, and field experts
+                    work tirelessly to deliver high-quality solutions with
+                    precision and efficiency. From planning to execution, we
+                    ensure that every project meets the highest industry
+                    standards, staying true to deadlines and client
+                    expectations. Your vision is our mission!
                   </p>
-                  <a href="#">Find out more &raquo;</a>
+                  {/* <a href="#">Find out more &raquo;</a> */}
                 </div>
               </div>
             </div>
@@ -182,16 +248,16 @@ function About() {
         {/* !-- End Counts Section -->  */}
 
         <div className="section-title">
-              <h2> Our Resources</h2>
+          <h2> Our Resources</h2>
         </div>
-        
 
-            <section id="counts" className="counts">
+        <section id="counts" className="counts">
           <div className="container">
             <div className="row no-gutters">
               <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-                <div className="count-box">
-                  {/* <i className="bi bi-emoji-smile"></i> */}
+                <div className="holographic-card">
+                  <i style={{ fontSize: 30 }} className="bi bi-people"></i>
+
                   <span
                     data-purecounter-start="0"
                     data-purecounter-end="232"
@@ -199,17 +265,44 @@ function About() {
                     className="purecounter"
                   ></span>
                   <p>
-                    <strong style={{fontSize: 20}}>Human Resources:</strong> <strong><br/>1. <u>Engineering Consultants:</u></strong> Experienced professionals with expertise in specific engineering disciplines.<strong><br/>2. <u>Project Managers:</u></strong> Responsible for overseeing projects and ensuring timely delivery.
-                    <strong><br/>3. <u>Design Engineers:</u></strong> Responsible for designing and developing engineering solutions.<strong><br/>4. <u>Drafting Technicians:</u></strong> Assist in creating engineering drawings and models.
-                    <strong><br/>5. <u>Administrative Staff:</u></strong> Provide support with administrative tasks, such as HR, finance, and marketing
+                    <strong style={{ fontSize: 20 }}>Human Resources:</strong>{" "}
+                    <strong>
+                      <br /> <br />
+                      1. <u>Engineering Consultants:</u>
+                    </strong>{" "}
+                    Experienced professionals with expertise in specific
+                    engineering disciplines.
+                    <strong>
+                      <br />
+                      2. <u>Project Managers:</u>
+                    </strong>{" "}
+                    Responsible for overseeing projects and ensuring timely
+                    delivery.
+                    <strong>
+                      <br />
+                      3. <u>Design Engineers:</u>
+                    </strong>{" "}
+                    Responsible for designing and developing engineering
+                    solutions.
+                    <strong>
+                      <br />
+                      4. <u>Drafting Technicians:</u>
+                    </strong>{" "}
+                    Assist in creating engineering drawings and models.
+                    <strong>
+                      <br />
+                      5. <u>Administrative Staff:</u>
+                    </strong>{" "}
+                    Provide support with administrative tasks, such as HR,
+                    finance, and marketing
                   </p>
                   {/* <a href="#">Find out more &raquo;</a> */}
                 </div>
               </div>
 
               <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-                <div className="count-box">
-                  {/* <i className="bi bi-journal-richtext"></i> */}
+                <div className="holographic-card">
+                  <i style={{ fontSize: 30 }} className="bi bi-tools"></i>
                   <span
                     data-purecounter-start="0"
                     data-purecounter-end="521"
@@ -217,19 +310,43 @@ function About() {
                     className="purecounter"
                   ></span>
                   <p>
-                  <strong style={{fontSize: 20}}>Physical Resources:</strong>  <strong><br/>1. <u>Office Space:</u></strong> Physical offices, meeting rooms, and other facilities having total carpet aread about 5000 sqft.
-                    <strong><br/>2. <u>Engineering Laboratories(NABL accrediated):</u></strong> Facilities for quality testing and validating engineering solutions.
-                    <strong><br/>3. <u>Equipment and Instrumentation:</u></strong> Specialized equipment and instruments for engineering(Auto levels, Total Station Machines), design, testing, and analysis.
-                    <strong><br/>4. <u>Vehicle Fleet:</u></strong> Company-owned vehicles for site visits, meetings, and other business purposes.
-
+                    <strong style={{ fontSize: 20 }}>
+                      Physical Resources:
+                    </strong>{" "}
+                    <strong>
+                      <br />
+                      <br />
+                      1. <u>Office Space:</u>
+                    </strong>{" "}
+                    Physical offices, meeting rooms, and other facilities having
+                    total carpet aread about 5000 sqft.
+                    <strong>
+                      <br />
+                      2. <u>Engineering Laboratories(NABL accrediated):</u>
+                    </strong>{" "}
+                    Facilities for quality testing and validating engineering
+                    solutions.
+                    <strong>
+                      <br />
+                      3. <u>Equipment and Instrumentation:</u>
+                    </strong>{" "}
+                    Specialized equipment and instruments for engineering(Auto
+                    levels, Total Station Machines), design, testing, and
+                    analysis.
+                    <strong>
+                      <br />
+                      4. <u>Vehicle Fleet:</u>
+                    </strong>{" "}
+                    Company-owned vehicles for site visits, meetings, and other
+                    business purposes.
                   </p>
                   {/* <a href="#0">Find out more &raquo;</a> */}
                 </div>
               </div>
 
               <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-                <div className="count-box">
-                  {/* <i className="bi bi-headset"></i> */}
+                <div className="holographic-card">
+                  <i style={{ fontSize: 30 }} className="bi-laptop"></i>
                   <span
                     data-purecounter-start="0"
                     data-purecounter-end="1463"
@@ -237,20 +354,54 @@ function About() {
                     className="purecounter"
                   ></span>
                   <p>
-                    <strong style={{fontSize: 20}}>Technological Resources</strong> 
-                    <strong><br/>1. <u> Computer-Aided Design (CAD) Systems:</u></strong>  Software and hardware for designing and modeling engineering solutions.
-                    <strong><br/>2. <u>Computational Fluid Dynamics (CFD) and Finite Element Analysis (FEA) Tools:</u></strong> Software for simulating and analyzing complex engineering problems.
-                    <strong><br/>3. <u>Building Information Modeling (BIM) Software:</u></strong>  Software for creating and managing digital models of buildings and infrastructure.
-                    <strong><br/>4. <u>Geographic Information Systems (GIS):</u></strong> Software for analyzing and visualizing geospatial data.
-                    <strong><br/>5. <u>Cloud-Based Collaboration Tools:</u></strong>Software for collaborating and sharing data with clients and team members.
+                    <strong style={{ fontSize: 20 }}>
+                      Technical Resources :
+                    </strong>
+                    <strong>
+                      <br />
+                      <br />
+                      1. <u> Computer-Aided Design (CAD) Systems:</u>
+                    </strong>{" "}
+                    Software and hardware for designing and modeling engineering
+                    solutions.
+                    <strong>
+                      <br />
+                      2.{" "}
+                      <u>
+                        Computational Fluid Dynamics (CFD) and Finite Element
+                        Analysis (FEA) Tools:
+                      </u>
+                    </strong>{" "}
+                    Software for simulating and analyzing complex engineering
+                    problems.
+                    <strong>
+                      <br />
+                      3. <u>Building Information Modeling (BIM) Software:</u>
+                    </strong>{" "}
+                    Software for creating and managing digital models of
+                    buildings and infrastructure.
+                    <strong>
+                      <br />
+                      4. <u>Geographic Information Systems (GIS):</u>
+                    </strong>{" "}
+                    Software for analyzing and visualizing geospatial data.
+                    <strong>
+                      <br />
+                      5. <u>Cloud-Based Collaboration Tools:</u>
+                    </strong>
+                    Software for collaborating and sharing data with clients and
+                    team members.
                   </p>
                   {/* <a href="#">Find out more &raquo;</a> */}
                 </div>
               </div>
 
               <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-                <div className="count-box">
-                  {/* <i className="bi bi-people"></i> */}
+                <div className="holographic-card">
+                  <i
+                    style={{ fontSize: 30 }}
+                    className="bi bi-person-badge"
+                  ></i>
                   <span
                     data-purecounter-start="0"
                     data-purecounter-end="15"
@@ -258,10 +409,24 @@ function About() {
                     className="purecounter"
                   ></span>
                   <p>
-                    <strong style={{fontSize: 20}}>Our Associations</strong> 
-                    <strong><br/>1. <u> Professional Associations:</u></strong>  Memberships in industry-specific associations.
-                    <strong><br/>2. <u>Partnerships:</u></strong> Strategic alliances with other companies, organizations, or industry experts.
-                    <strong><br/>3. <u>Alumni Network:</u></strong>  Connections with former employees, clients, and partners.
+                    <strong style={{ fontSize: 20 }}>Our Associations :</strong>
+                    <strong>
+                      <br />
+                      <br />
+                      1. <u> Professional Associations:</u>
+                    </strong>{" "}
+                    Memberships in industry-specific associations.
+                    <strong>
+                      <br />
+                      2. <u>Partnerships:</u>
+                    </strong>{" "}
+                    Strategic alliances with other companies, organizations, or
+                    industry experts.
+                    <strong>
+                      <br />
+                      3. <u>Alumni Network:</u>
+                    </strong>{" "}
+                    Connections with former employees, clients, and partners.
                   </p>
                   {/* <a href="#">Find out more &raquo;</a> */}
                 </div>
@@ -270,30 +435,41 @@ function About() {
           </div>
         </section>
 
-
-
-
-
-
-
-
         {/* <!-- ======= Clients Section ======= --> */}
         <section id="clients" className="clients">
           <div className="container">
             <div className="section-title">
               <h2>Clients</h2>
             </div>
-            <div className="clients-grid">
-              <img src={client1} height="150px" alt="Bharat Petroleum" />
-              <img src={client2} height="150px" alt="Hindustan Petroleum" />
-              <img src={client3} height="150px" alt="Indian Oil" />
-              <img src={client4} height="150px" alt="IGL" />
-              <img src={client5} height="150px" alt="Another Client" />
-              <img src={client6} className="small-logo" alt="Smaller Client" />
-              <img src={client7} height="150px" alt="Another Client" />
-              <img src={client8} className="small-logo" alt="Smaller Client" />
-              <img src={client9} height="150px" alt="Gail Gas" />
-            </div>
+            <Carousel
+              indicators={false}
+              controls={true}
+              prevIcon={
+                <span style={{ color: "black", fontSize: "24px" }}>
+                  &#10094;
+                </span>
+              }
+              nextIcon={
+                <span style={{ color: "black", fontSize: "24px" }}>
+                  &#10095;
+                </span>
+              }
+              style={{
+                padding: "20px",
+                borderRadius: "10px",
+                width: "100%",
+              }}
+            >
+              {slides.map((group, index) => (
+                <Carousel.Item key={index}>
+                  <div className="clients-grid">
+                    {group.map((client, idx) => (
+                      <img key={idx} src={client.src} alt={client.alt} />
+                    ))}
+                  </div>
+                </Carousel.Item>
+              ))}
+            </Carousel>
           </div>
         </section>
         {/* <!-- End Clients Section --> */}

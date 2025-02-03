@@ -1,20 +1,15 @@
 import React from "react";
-import TopBar from "../../components/TopBar/TopBar.tsx";
 import NavBar from "../../components/NavBar/NavBar.tsx";
 import Footer from "../../components/footer/footer.tsx";
 import { send } from "@emailjs/browser";
 
-
 const ContactUs = () => {
-
-  const [name, setName] = React.useState<string>("")
-  const [email, setEmail] = React.useState<string>('')
-  const [subject, setSubject] = React.useState<string>('')
-  const [userMessage, setUserMessage] = React.useState<string>('')
-
+  const [name, setName] = React.useState<string>("");
+  const [email, setEmail] = React.useState<string>("");
+  const [subject, setSubject] = React.useState<string>("");
+  const [userMessage, setUserMessage] = React.useState<string>("");
 
   const handleContactUs = () => {
-    
     const templateParams = {
       to_name: "APEX",
       from_name: name,
@@ -22,7 +17,7 @@ const ContactUs = () => {
       subject: subject,
       message: userMessage,
     };
-  
+
     send("apex_mail", "template_qbjowla", templateParams, "MVi1YIwmU0ITlFbz9")
       .then((response) => {
         console.log("Email sent successfully!", response);
@@ -30,14 +25,11 @@ const ContactUs = () => {
       .catch((error) => {
         console.error("Error sending email:", error);
       });
-  }
-
+  };
 
   return (
     <>
-      <TopBar />
       <NavBar />
-      {/* Start Main  */}
 
       <main id="main" style={{ background: "#ffffff" }}>
         {/* <!-- ======= Breadcrumbs ======= --> */}
@@ -57,29 +49,30 @@ const ContactUs = () => {
         {/* <!-- ======= Contact Section ======= --> */}
         <section id="contact" className="contact">
           <div className="container">
-            <div className="row">
+            <div style={{ padding: 10 }} className="row">
               <div className="col-lg-6">
-                <div className="info-box mb-4">
-                  <i className="bx bx-map"></i>
-                  <h3>Our Address</h3>
+                <div className="holographic-card">
+                  <i style={{ fontSize: 30 }} className="bx bx-map"></i>
+                  <h3 style={{ color: "#30146c" }}>Our Address</h3>
                   <p>
-                  SNP43/ 80A & 80A/1, Shashi nagar, Near Anna ikon Building,Sikandra, Agra
+                    SNP43/ 80A & 80A/1, Shashi nagar, Near Anna ikon
+                    Building,Sikandra, Agra
                   </p>
                 </div>
               </div>
 
               <div className="col-lg-3 col-md-6">
-                <div className="info-box  mb-4">
-                  <i className="bx bx-envelope"></i>
-                  <h3>Email Us</h3>
+                <div className="holographic-card">
+                  <i style={{ fontSize: 30 }} className="bx bx-envelope"></i>
+                  <h3 style={{ color: "#30146c" }}>Email Us</h3>
                   <p>Apex_agra@yahoo.com</p>
                 </div>
               </div>
 
               <div className="col-lg-3 col-md-6">
-                <div className="info-box  mb-4">
-                  <i className="bx bx-phone-call"></i>
-                  <h3>Call Us</h3>
+                <div className="holographic-card">
+                  <i style={{ fontSize: 30 }} className="bx bx-phone-call"></i>
+                  <h3 style={{ color: "#30146c" }}>Call Us</h3>
                   <p>+91 7983213124</p>
                 </div>
               </div>
@@ -100,61 +93,73 @@ const ContactUs = () => {
                   onSubmit={handleContactUs}
                   className="php-email-form"
                 > */}
-                  <div className="row">
-                    <div className="col-md-6 form-group">
-                      <input
-                        onChange={((e) => setName(e.target.value))}
-                        type="text"
-                        name="name"
-                        className="form-control"
-                        id="name"
-                        placeholder="Your Name"
-                        required
-                      />
-                    </div>
-                    <div className="col-md-6 form-group mt-3 mt-md-0">
-                      <input
-                      onChange={((e) => setEmail(e.target.value))}
-                        type="email"
-                        className="form-control"
-                        name="email"
-                        id="email"
-                        placeholder="Your Email"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div className="form-group mt-3">
+                <div className="row">
+                  <div className="col-md-6 form-group">
                     <input
-                    onChange={((e) => setSubject(e.target.value))}
+                      onChange={(e) => setName(e.target.value)}
                       type="text"
+                      name="name"
                       className="form-control"
-                      name="subject"
-                      id="subject"
-                      placeholder="Subject"
+                      id="name"
+                      placeholder="Your Name"
                       required
                     />
                   </div>
-                  <div className="form-group mt-3">
-                    <textarea
-                    onChange={((e) => setUserMessage(e.target.value))}
+                  <div className="col-md-6 form-group mt-3 mt-md-0">
+                    <input
+                      onChange={(e) => setEmail(e.target.value)}
+                      type="email"
                       className="form-control"
-                      name="message"
-                      rows={6}
-                      placeholder="Message"
+                      name="email"
+                      id="email"
+                      placeholder="Your Email"
                       required
-                    ></textarea>
+                    />
                   </div>
-                  {/* <div className="my-3">
+                </div>
+                <div className="form-group mt-3">
+                  <input
+                    onChange={(e) => setSubject(e.target.value)}
+                    type="text"
+                    className="form-control"
+                    name="subject"
+                    id="subject"
+                    placeholder="Subject"
+                    required
+                  />
+                </div>
+                <div className="form-group mt-3">
+                  <textarea
+                    onChange={(e) => setUserMessage(e.target.value)}
+                    className="form-control"
+                    name="message"
+                    rows={6}
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+                {/* <div className="my-3">
                     <div className="loading">Loading</div>
                     <div className="error-message"></div>
                     <div className="sent-message">
                       Your message has been sent. Thank you!
                     </div>
                   </div> */}
-                  <div className="text-center">
-                    <button onClick={handleContactUs} type="submit">Send Message</button>
-                  </div>
+                <div className="text-center">
+                  <button
+                    style={{
+                      backgroundColor: "#30146c",
+                      color: "white",
+                      padding: 7,
+                      borderRadius: 10,
+                      margin: 10,
+                    }}
+                    onClick={handleContactUs}
+                    type="submit"
+                  >
+                    Send Message
+                  </button>
+                </div>
                 {/* </form> */}
               </div>
             </div>

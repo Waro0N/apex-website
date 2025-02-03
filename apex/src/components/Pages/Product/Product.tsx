@@ -1,5 +1,5 @@
 import Footer from "../../footer/footer.tsx";
-import TopBar from "../../TopBar/TopBar.tsx";
+// import TopBar from "../../TopBar/TopBar.tsx";
 import NavBar from "../../NavBar/NavBar.tsx";
 
 // Image Import
@@ -9,13 +9,11 @@ import NavBar from "../../NavBar/NavBar.tsx";
 function Product() {
   return (
     <>
-      <TopBar />
+      {/* <TopBar /> */}
       <NavBar />
 
       {/* Main Start  */}
       <main id="main" style={{ background: "#fff" }}>
-
-
         {/* <!-- ======= Breadcrumbs ======= --> */}
         <section id="breadcrumbs" className="breadcrumbs">
           <div className="container">
@@ -23,7 +21,7 @@ function Product() {
               <li>
                 <a href="index.html">Home</a>
               </li>
-              <li>  Services</li>
+              <li> Services</li>
             </ol>
             <h2>Services</h2>
           </div>
@@ -35,91 +33,111 @@ function Product() {
           <div className="container">
             <div className="row">
               <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
-                <div className="icon-box">
+                <div className="holographic-card">
                   <div className="icon">
-                    <i className="bx bxl-dribbble"></i>
+                    <i style={{ fontSize: 30 }} className="bi bi-rulers"></i>
                   </div>
                   <h4>
-                    <a href="">Engineering & Survey</a>
+                    <a href="/Product">Engineering & Survey</a>
                   </h4>
                   <p>
-                  Provides the precise measurement and mapping of land to aid in the planning, design, and construction of infrastructure projects.
+                    Provides the precise measurement and mapping of land to aid
+                    in the planning, design, and construction of infrastructure
+                    projects.
                   </p>
                 </div>
               </div>
 
               <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-                <div className="icon-box">
+                <div className="holographic-card">
                   <div className="icon">
-                    <i className="bx bx-file"></i>
+                    <i style={{ fontSize: 30 }} className="bi bi-bricks"></i>
                   </div>
                   <h4>
-                    <a href="">Architecture</a>
+                    <a href="/Product">Architecture</a>
                   </h4>
                   <p>
-                  Focuses on integrating aesthetic design with structural functionality to create efficient and visually appealing infrastructure and buildings.
+                    Focuses on integrating aesthetic design with structural
+                    functionality to create efficient and visually appealing
+                    infrastructure and buildings.
                   </p>
                 </div>
               </div>
 
               <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-                <div className="icon-box">
+                <div className="holographic-card">
                   <div className="icon">
-                    <i className="bx bx-tachometer"></i>
+                    <i
+                      style={{ fontSize: 30 }}
+                      className="bi bi-calendar-check"
+                    ></i>
                   </div>
                   <h4>
-                    <a href="">PMC</a>
+                    <a href="/Product">PMC</a>
                   </h4>
                   <p>
-                  Ensures the efficient planning, execution, and delivery of construction projects by overseeing quality, timelines, and resources.
+                    Ensures the efficient planning, execution, and delivery of
+                    construction projects by overseeing quality, timelines, and
+                    resources.
                   </p>
                 </div>
               </div>
 
               <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-                <div className="icon-box">
+                <div className="holographic-card">
                   <div className="icon">
-                    <i className="bx bx-world"></i>
+                    <i
+                      style={{ fontSize: 30 }}
+                      className="bi bi-shield-check"
+                    ></i>
                   </div>
                   <h4>
-                    <a href="">Quality & Testing </a>
+                    <a href="/Product">Quality & Testing </a>
                   </h4>
                   <p>
-                  Ensures that construction materials and processes meet specified standards and durability requirements for safe and reliable infrastructure.
+                    Ensures that construction materials and processes meet
+                    specified standards and durability requirements for safe and
+                    reliable infrastructure.
                   </p>
                 </div>
               </div>
 
               <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-                <div className="icon-box">
+                <div className="holographic-card">
                   <div className="icon">
-                    <i className="bx bx-slideshow"></i>
+                    <i
+                      style={{ fontSize: 30 }}
+                      className="bi-file-earmark-check"
+                    ></i>
                   </div>
                   <h4>
-                    <a href="">Liaisoning and NOC</a>
+                    <a href="/Product">Liaisoning and NOC</a>
                   </h4>
                   <p>
-                  Liaisoning and NOC (No Objection Certificate) involve coordinating with government authorities to obtain necessary approvals and clearances for construction projects.
+                    Liaisoning and NOC (No Objection Certificate) involve
+                    coordinating with government authorities to obtain necessary
+                    approvals and clearances for construction projects.
                   </p>
                 </div>
               </div>
 
               <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-                <div className="icon-box">
+                <div className="holographic-card">
                   <div className="icon">
-                    <i className="bx bx-arch"></i>
+                    <i style={{ fontSize: 30 }} className="bi bi-building"></i>
                   </div>
                   <h4>
-                    <a href="">Construction</a>
+                    <a href="/Product">Construction</a>
                   </h4>
                   <p>
-                  Involves the execution of designs to build infrastructure such as buildings, bridges, roads, and dams, ensuring structural integrity and compliance with standards.
+                    Involves the execution of designs to build infrastructure
+                    such as buildings, bridges, roads, and dams, ensuring
+                    structural integrity and compliance with standards.
                   </p>
                 </div>
-              </div>
               </div>
             </div>
-          
+          </div>
         </section>
         {/* <!-- End Services Section --> */}
 

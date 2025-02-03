@@ -1,3 +1,4 @@
+import Carousel from "react-bootstrap/Carousel";
 import client1 from "../../assets/images/clients/client-1.png";
 import client2 from "../../assets/images/clients/client-2.png";
 import client3 from "../../assets/images/clients/client-3.png";
@@ -9,17 +10,35 @@ import client8 from "../../assets/images/clients/client-8.png";
 import client9 from "../../assets/images/clients/client-9.png";
 import About from "../../assets/images/about.jpg";
 import Slider from "../Carousel/Slider.tsx";
-import TopBar from "../TopBar/TopBar.tsx";
+// import TopBar from "../TopBar/TopBar.tsx";
 import NavBar from "../NavBar/NavBar.tsx";
 import Hero from "../Hero/Hero.tsx";
 import Footer from "../footer/footer.tsx";
 import "../Homepage/Homepage.css";
 
+const clients = [
+  { src: client1, alt: "Bharat Petroleum" },
+  { src: client2, alt: "Hindustan Petroleum" },
+  { src: client3, alt: "Indian Oil" },
+  { src: client4, alt: "IGL" },
+  { src: client5, alt: "Another Client" },
+  { src: client6, alt: "Smaller Client" },
+  { src: client7, alt: "Another Client" },
+  { src: client8, alt: "Smaller Client" },
+  { src: client9, alt: "Gail Gas" },
+];
 
 function Homepage() {
+  const chunkSize = 3;
+  const slides = [];
+
+  for (let i = 0; i < clients.length; i += chunkSize) {
+    slides.push(clients.slice(i, i + chunkSize));
+  }
+
   return (
     <>
-      <TopBar />
+      {/* <TopBar /> */}
       <NavBar />
       <Hero />
 
@@ -29,35 +48,47 @@ function Homepage() {
           <div className="container">
             <div className="row">
               <div className="col-lg-4">
-                <div className="icon-box">
-                  {/* <i className="bi bi-card-checklist"></i> */}
+                <div className="holographic-card">
+                  <i style={{ fontSize: 30 }} className="bi bi-vector-pen"></i>
                   <h3>
-                    <a href="">Expertise in Design and Planning</a>
+                    <a href="">Design and Planning</a>
                   </h3>
                   <p>
-                    A strong consultancy offers innovative and efficient designs, ensuring structures are safe, sustainable, and compliant with regulations.
+                    A strong consultancy offers innovative and efficient
+                    designs, ensuring structures are safe, sustainable, and
+                    compliant with regulations.
                   </p>
                 </div>
               </div>
               <div className="col-lg-4 mt-4 mt-lg-0">
-                <div className="icon-box">
-                  {/* <i className="bi bi-bar-chart"></i> */}
+                <div className="holographic-card">
+                  <i
+                    style={{ fontSize: 30 }}
+                    className="bi bi-clock-history"
+                  ></i>
                   <h3>
                     <a href="">Timely Project Execution</a>
                   </h3>
                   <p>
-                    They excel in meeting deadlines through effective project management and resource allocation, minimizing delays and cost overruns.
+                    They excel in meeting deadlines through effective project
+                    management and resource allocation, minimizing delays and
+                    cost overruns.
                   </p>
                 </div>
               </div>
               <div className="col-lg-4 mt-4 mt-lg-0">
-                <div className="icon-box">
-                  {/* <i className="bi bi-binoculars"></i> */}
+                <div className="holographic-card">
+                  <i
+                    style={{ fontSize: 30 }}
+                    className="bi bi-person-heart"
+                  ></i>
                   <h3>
                     <a href="">Client-Centric Approach</a>
                   </h3>
                   <p>
-                    By maintaining clear communication and understanding client needs, they deliver customized solutions that exceed expectations.
+                    By maintaining clear communication and understanding client
+                    needs, they deliver customized solutions that exceed
+                    expectations.
                   </p>
                 </div>
               </div>
@@ -82,27 +113,46 @@ function Homepage() {
               </div>
               <div className="col-lg-6 pt-4 pt-lg-0 content">
                 <h3>
-                  Welcome to <span style={{ color: '#7ea13d' }}>Apex Engineers And Consultants Private Limited </span>
+                  Welcome to{" "}
+                  <span style={{ color: "#7ea13d" }}>
+                    Apex Engineers And Consultants Private Limited{" "}
+                  </span>
                 </h3>
                 <p className="fst-italic">
-                  Apex Engineers And Consultants Pvt. Ltd is the emerging consultancy company having group of consultants and expert dealing in Engineering, Quality and  testing, Architecture, and Quality construction. With the successful 23 years in the industry while dealing in the sectors of consultancy Apex Engineers And Consultants Pvt. Ltd.   aligns technology solutions with your business and engineering objectives.
-
-
+                  <b>
+                    Apex Engineers and Consultants Pvt. Ltd. : Your Trusted
+                    Partner in Engineering and Quality Excellence.{" "}
+                  </b>
                 </p>
                 <p className="fst-italic">
-
-                  Our team of consultants - We are the team of consultats, engineers, architect and associated experts for specific expert field, drawn from leading business will help transform your engineering operations through process improvement initiatives.
-
-
+                  <b>
+                    With over 23 years of industry expertise, Apex Engineers and
+                    Consultants Pvt. Ltd. has emerged as a leading consultancy
+                    company specializing in Civil Engineering, Architecture,
+                    Quality Testing, and Quality Construction. Our mission is to
+                    deliver tailored engineering and consultancy solutions that
+                    align with your business goals and engineering needs.
+                  </b>
                 </p>
                 <p className="fst-italic">
-
-                  Using advanced tools and applications, along with proven business and integration, our strategic engineering consulting services have helped many leading manufacturers achieve business breakthroughs. Provides design and development solutions to reduce costs through value engineering.
-
+                  <b>
+                    Using advanced tools and applications, along with proven
+                    business and integration, our strategic engineering
+                    consulting services have helped many leading manufacturers
+                    achieve business breakthroughs. Provides design and
+                    development solutions to reduce costs through value
+                    engineering.
+                  </b>
                 </p>
                 <p className="fst-italic">
-
-                  From inception to completion, we plan, execute, and control projects backed by proactive planning and first-hand knowledge of contract terms, client objectives, responsibilities, and capabilities. Adept technical and human resources are pooled to forge effective project organization structures.
+                  <b>
+                    From inception to completion, we plan, execute, and control
+                    projects backed by proactive planning and first-hand
+                    knowledge of contract terms, client objectives,
+                    responsibilities, and capabilities. Adept technical and
+                    human resources are pooled to forge effective project
+                    organization structures.
+                  </b>
                 </p>
                 {/* <ul>
                   <li>
@@ -131,91 +181,111 @@ function Homepage() {
           <div className="container">
             <div className="row">
               <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
-                <div className="icon-box">
+                <div className="holographic-card">
                   <div className="icon">
-                    <i className="bx bxl-dribbble"></i>
+                    <i style={{ fontSize: 30 }} className="bi bi-rulers"></i>
                   </div>
                   <h4>
-                    <a href="">Engineering & Survey</a>
+                    <a href="/Product">Engineering & Survey</a>
                   </h4>
                   <p>
-                    Provides the precise measurement and mapping of land to aid in the planning, design, and construction of infrastructure projects.
+                    Provides the precise measurement and mapping of land to aid
+                    in the planning, design, and construction of infrastructure
+                    projects.
                   </p>
                 </div>
               </div>
 
               <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-                <div className="icon-box">
+                <div className="holographic-card">
                   <div className="icon">
-                    <i className="bx bx-file"></i>
+                    <i style={{ fontSize: 30 }} className="bi bi-bricks"></i>
                   </div>
                   <h4>
-                    <a href="">Architecture</a>
+                    <a href="/Product">Architecture</a>
                   </h4>
                   <p>
-                    Focuses on integrating aesthetic design with structural functionality to create efficient and visually appealing infrastructure and buildings.
+                    Focuses on integrating aesthetic design with structural
+                    functionality to create efficient and visually appealing
+                    infrastructure and buildings.
                   </p>
                 </div>
               </div>
 
               <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-                <div className="icon-box">
+                <div className="holographic-card">
                   <div className="icon">
-                    <i className="bx bx-tachometer"></i>
+                    <i
+                      style={{ fontSize: 30 }}
+                      className="bi bi-calendar-check"
+                    ></i>
                   </div>
                   <h4>
-                    <a href="">PMC</a>
+                    <a href="/Product">PMC</a>
                   </h4>
                   <p>
-                    Ensures the efficient planning, execution, and delivery of construction projects by overseeing quality, timelines, and resources.
+                    Ensures the efficient planning, execution, and delivery of
+                    construction projects by overseeing quality, timelines, and
+                    resources.
                   </p>
                 </div>
               </div>
 
               <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-                <div className="icon-box">
+                <div className="holographic-card">
                   <div className="icon">
-                    <i className="bx bx-world"></i>
+                    <i
+                      style={{ fontSize: 30 }}
+                      className="bi bi-shield-check"
+                    ></i>
                   </div>
                   <h4>
-                    <a href="">Quality & Testing </a>
+                    <a href="/Product">Quality & Testing </a>
                   </h4>
                   <p>
-                    Ensures that construction materials and processes meet specified standards and durability requirements for safe and reliable infrastructure.
+                    Ensures that construction materials and processes meet
+                    specified standards and durability requirements for safe and
+                    reliable infrastructure.
                   </p>
                 </div>
               </div>
 
               <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-                <div className="icon-box">
+                <div className="holographic-card">
                   <div className="icon">
-                    <i className="bx bx-slideshow"></i>
+                    <i
+                      style={{ fontSize: 30 }}
+                      className="bi-file-earmark-check"
+                    ></i>
                   </div>
                   <h4>
-                    <a href="">Liaisoning and NOC</a>
+                    <a href="/Product">Liaisoning and NOC</a>
                   </h4>
                   <p>
-                    Liaisoning and NOC (No Objection Certificate) involve coordinating with government authorities to obtain necessary approvals and clearances for construction projects.
+                    Liaisoning and NOC (No Objection Certificate) involve
+                    coordinating with government authorities to obtain necessary
+                    approvals and clearances for construction projects.
                   </p>
                 </div>
               </div>
 
               <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-                <div className="icon-box">
+                <div className="holographic-card">
                   <div className="icon">
-                    <i className="bx bx-arch"></i>
+                    <i style={{ fontSize: 30 }} className="bi bi-building"></i>
                   </div>
                   <h4>
-                    <a href="">Construction</a>
+                    <a href="/Product">Construction</a>
                   </h4>
                   <p>
-                    Involves the execution of designs to build infrastructure such as buildings, bridges, roads, and dams, ensuring structural integrity and compliance with standards.
+                    Involves the execution of designs to build infrastructure
+                    such as buildings, bridges, roads, and dams, ensuring
+                    structural integrity and compliance with standards.
                   </p>
                 </div>
               </div>
             </div>
           </div>
-
         </section>
         {/* <!-- End Services Section --> */}
 
@@ -225,22 +295,37 @@ function Homepage() {
             <div className="section-title">
               <h2>Clients</h2>
             </div>
-            <div className="clients-grid">
-              <img src={client1} height="150px" alt="Bharat Petroleum" />
-              <img src={client2} height="150px" alt="Hindustan Petroleum" />
-              <img src={client3} height="150px" alt="Indian Oil" />
-              <img src={client4} height="150px" alt="IGL" />
-              <img src={client5} height="150px" alt="Another Client" />
-              <img src={client6} className="small-logo" alt="Smaller Client" />
-              <img src={client7} height="150px" alt="Another Client" />
-              <img src={client8} className="small-logo" alt="Smaller Client" />
-              <img src={client9} height="150px" alt="Gail Gas" />
-            </div>
+            <Carousel
+              indicators={false}
+              controls={true}
+              prevIcon={
+                <span style={{ color: "black", fontSize: "24px" }}>
+                  &#10094;
+                </span>
+              }
+              nextIcon={
+                <span style={{ color: "black", fontSize: "24px" }}>
+                  &#10095;
+                </span>
+              }
+              style={{
+                padding: "20px",
+                borderRadius: "10px",
+                width: "100%",
+              }}
+            >
+              {slides.map((group, index) => (
+                <Carousel.Item key={index}>
+                  <div className="clients-grid">
+                    {group.map((client, idx) => (
+                      <img key={idx} src={client.src} alt={client.alt} />
+                    ))}
+                  </div>
+                </Carousel.Item>
+              ))}
+            </Carousel>
           </div>
         </section>
-
-
-
       </main>
 
       <Footer />
