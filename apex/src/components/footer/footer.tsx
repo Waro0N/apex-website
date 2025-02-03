@@ -1,4 +1,9 @@
 const Footer = () => {
+
+  const handleLinkedInClick = () => {
+    window.open("https://www.linkedin.com/company/apex-engineers-and-consultants/")
+  }
+
   return (
     <footer id="footer">
       <div className="footer-top">
@@ -91,7 +96,7 @@ const Footer = () => {
                 <a href="#" className="google-plus">
                   <i className="bx bxl-skype"></i>
                 </a> */}
-                <a href="https://www.linkedin.com/company/apex-engineers-and-consultants/" className="linkedin">
+                <a onClick={handleLinkedInClick} className="linkedin">
                   <i className="bx bxl-linkedin"></i>
                 </a>
               </div>

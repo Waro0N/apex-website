@@ -1,20 +1,131 @@
 .clients-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-items: center;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.clients-grid img {
+  max-width: 100%;
+  height: 160px;
+  object-fit: contain;
+}
+
+.clients-grid .small-logo {
+  height: 150px; /* Smaller height */
+  max-width: 80%; /* Adjust width proportionally */
+}
+
+.holographic-card {
+  /* Adjusted for added description */
+  border: 0.5px solid #000;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  /* text-align: center; */
+  padding: 40px 30px;
+}
+
+.holographic-card h2 {
+  color: #cadcfc;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.holographic-card .holographic-description {
+  color: #ccc;
+  font-size: 1rem;
+  z-index: 2;
+}
+
+.holographic-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(0deg, transparent, transparent 30%, #cadcfc);
+  transform: rotate(-45deg);
+  transition: all 1s ease;
+  opacity: 0;
+}
+
+.holographic-card:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 510px #cadcfc;
+}
+
+.holographic-card:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
+
+.clients-carousel {
+  width: 100vw; /* Full width */
+  background-color: grey !important;
+  padding: 20px 0;
+}
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.clients-grid img {
+  max-width: 80%; /* Default size */
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Reduce size on larger screens to avoid overlap */
+@media (min-width: 1024px) {
   .clients-grid img {
-    max-width: 100%;
-    height: 160px;
-    object-fit: contain;
+    max-width: 60%; /* Shrink logos slightly */
   }
-  
-  .clients-grid .small-logo {
-    height: 150px; /* Smaller height */
-    max-width: 80%; /* Adjust width proportionally */
+}
+
+/* Reduce further on very large screens */
+@media (min-width: 1440px) {
+  .clients-grid img {
+    max-width: 50%;
   }
-  
+}
+
+/* Adjustments for mobile screens */
+@media (max-width: 768px) {
+  .clients-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+  }
+
+  .clients-grid img {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .clients-grid img {
+    max-width: 60%;
+  }
+}
