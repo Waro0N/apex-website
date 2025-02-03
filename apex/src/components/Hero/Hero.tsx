@@ -1,4 +1,5 @@
 import "./Hero.css";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -42,13 +43,13 @@ function Hero() {
                     dealing in Engineering, Quality and testing, Architecture,
                     and Quality construction.{" "}
                   </p>
-                  <a href="/about" className="RMbtn">
+                  <Link to="/about" className="RMbtn">
                     Read More
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
