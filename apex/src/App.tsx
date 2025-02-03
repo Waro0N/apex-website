@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Career from "./components/Pages/Career/Career.tsx";
 import About from "./components/Pages/About/About";
 import MaterialTestingLab from "./components/Pages/MaterialTestingLab/MaterialTestingLab.tsx";
-import Product from "./components/Pages/Product/Product.tsx";
+import Services from "./components/Pages/Service/Services.tsx";
 
 function App() {
   return (
@@ -16,8 +16,8 @@ function App() {
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/about" element={<About />} />
           <Route path="/business-insider" element={<MaterialTestingLab />} />
-          <Route path="/product" element={<Product />} />
-          <Route path="*" element={<Career />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/career" element={<Career />} />
         </Routes>
       </header>
     </BrowserRouter>

@@ -6,7 +6,7 @@ import NavBar from "../../NavBar/NavBar.tsx";
 
 // import skill from "../../../assets/images/skills-img.jpg";
 
-function Product() {
+function Services() {
   return (
     <>
       {/* <TopBar /> */}
@@ -38,7 +38,7 @@ function Product() {
                     <i style={{ fontSize: 30 }} className="bi bi-rulers"></i>
                   </div>
                   <h4>
-                    <a href="/Product">Engineering & Survey</a>
+                    <a href="/services">Engineering & Survey</a>
                   </h4>
                   <p>
                     Provides the precise measurement and mapping of land to aid
@@ -54,7 +54,7 @@ function Product() {
                     <i style={{ fontSize: 30 }} className="bi bi-bricks"></i>
                   </div>
                   <h4>
-                    <a href="/Product">Architecture</a>
+                    <a href="/services">Architecture</a>
                   </h4>
                   <p>
                     Focuses on integrating aesthetic design with structural
@@ -73,7 +73,7 @@ function Product() {
                     ></i>
                   </div>
                   <h4>
-                    <a href="/Product">PMC</a>
+                    <a href="/services">PMC</a>
                   </h4>
                   <p>
                     Ensures the efficient planning, execution, and delivery of
@@ -92,7 +92,7 @@ function Product() {
                     ></i>
                   </div>
                   <h4>
-                    <a href="/Product">Quality & Testing </a>
+                    <a href="/services">Quality & Testing </a>
                   </h4>
                   <p>
                     Ensures that construction materials and processes meet
@@ -111,7 +111,7 @@ function Product() {
                     ></i>
                   </div>
                   <h4>
-                    <a href="/Product">Liaisoning and NOC</a>
+                    <a href="/services">Liaisoning and NOC</a>
                   </h4>
                   <p>
                     Liaisoning and NOC (No Objection Certificate) involve
@@ -127,7 +127,7 @@ function Product() {
                     <i style={{ fontSize: 30 }} className="bi bi-building"></i>
                   </div>
                   <h4>
-                    <a href="/Product">Construction</a>
+                    <a href="/services">Construction</a>
                   </h4>
                   <p>
                     Involves the execution of designs to build infrastructure
@@ -245,4 +245,4 @@ function Product() {
   );
 }
 
-export default Product;
+export default Services;

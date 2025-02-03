@@ -1,8 +1,9 @@
 const Footer = () => {
-
   const handleLinkedInClick = () => {
-    window.open("https://www.linkedin.com/company/apex-engineers-and-consultants/")
-  }
+    window.open(
+      "https://www.linkedin.com/company/apex-engineers-and-consultants/"
+    );
+  };
 
   return (
     <footer id="footer">
@@ -13,23 +14,23 @@ const Footer = () => {
               <h4>Useful Links</h4>
               <ul>
                 <li>
-                  <i className="bx bx-chevron-right"></i> <a href="/Homepage">Home</a>
+                  <i className="bx bx-chevron-right"></i> <a href="/">Home</a>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="/About">About us</a>
+                  <a href="/about">About us</a>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="/Product">Services</a>
+                  <a href="/services">Services</a>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="/Career">Career</a>
+                  <a href="/career">Career</a>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="/Contact Us">Contact Us</a>
+                  <a href="/contact">Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -39,27 +40,27 @@ const Footer = () => {
               <ul>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="/Product">Engineering & Survey</a>
+                  <a href="/services">Engineering & Survey</a>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="/Product">Architecture</a>
+                  <a href="/services">Architecture</a>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="/Product">PMC</a>
+                  <a href="/services">PMC</a>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="/Product">Quality & Testing </a>
+                  <a href="/services">Quality & Testing </a>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="/Product">Liasioning and NOC</a>
+                  <a href="/services">Liasioning and NOC</a>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="/Product">Construction</a>
+                  <a href="/services">Construction</a>
                 </li>
               </ul>
             </div>
@@ -67,7 +68,8 @@ const Footer = () => {
             <div className="col-lg-3 col-md-6 footer-contact">
               <h4>Contact Us</h4>
               <p>
-              SNP43/ 80A & 80A/1, Shashi nagar, Near Anna ikon Building,Sikandra, Agra
+                SNP43/ 80A & 80A/1, Shashi nagar, Near Anna ikon
+                Building,Sikandra, Agra
                 <br />
                 India <br />
                 <br />
@@ -81,7 +83,10 @@ const Footer = () => {
             <div className="col-lg-3 col-md-6 footer-info">
               <h3>About Apexma</h3>
               <p>
-              Apex Engineers And Consultants Pvt. Ltd is the emerging consultancy company having group of consultants and expert dealing in Engineering, Quality and  testing, Architecture, and Quality construction.
+                Apex Engineers And Consultants Pvt. Ltd is the emerging
+                consultancy company having group of consultants and expert
+                dealing in Engineering, Quality and testing, Architecture, and
+                Quality construction.
               </p>
               <div className="social-links mt-3">
                 {/* <a href="#" className="twitter">
