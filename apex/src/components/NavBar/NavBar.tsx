@@ -53,7 +53,7 @@ export default function NavBar() {
               </li>
               {/* <li><Link to="/sustainability" onClick={toggleSideNav}>Sustainability</Link></li> */}
               <li>
-                <Link to="/product">
+                <Link to="/services">
                   <b>Services</b>
                 </Link>
               </li>
