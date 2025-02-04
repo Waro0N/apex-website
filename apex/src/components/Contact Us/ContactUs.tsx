@@ -20,6 +20,10 @@ const ContactUs = () => {
 
     send("apex_mail", "template_qbjowla", templateParams, "MVi1YIwmU0ITlFbz9")
       .then((response) => {
+        setEmail("");
+        setUserMessage("");
+        setSubject("");
+        setName("");
         console.log("Email sent successfully!", response);
       })
       .catch((error) => {
@@ -96,6 +100,7 @@ const ContactUs = () => {
                 <div className="row">
                   <div className="col-md-6 form-group">
                     <input
+                      value={name}
                       onChange={(e) => setName(e.target.value)}
                       type="text"
                       name="name"
@@ -107,6 +112,7 @@ const ContactUs = () => {
                   </div>
                   <div className="col-md-6 form-group mt-3 mt-md-0">
                     <input
+                      value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       type="email"
                       className="form-control"
@@ -119,6 +125,7 @@ const ContactUs = () => {
                 </div>
                 <div className="form-group mt-3">
                   <input
+                    value={subject}
                     onChange={(e) => setSubject(e.target.value)}
                     type="text"
                     className="form-control"
@@ -130,6 +137,7 @@ const ContactUs = () => {
                 </div>
                 <div className="form-group mt-3">
                   <textarea
+                    value={userMessage}
                     onChange={(e) => setUserMessage(e.target.value)}
                     className="form-control"
                     name="message"
