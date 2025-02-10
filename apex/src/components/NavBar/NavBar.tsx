@@ -48,7 +48,7 @@ export default function NavBar() {
               </li>
               <li>
                 <Link to="/business-insider">
-                  <b>Material Testing Lab</b>
+                  <b>Certifications</b>
                 </Link>
               </li>
               {/* <li><Link to="/sustainability" onClick={toggleSideNav}>Sustainability</Link></li> */}
