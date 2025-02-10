@@ -1,11 +1,11 @@
-.clients-grid {
+/* .clients-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   justify-items: center;
   align-items: center;
   margin-top: 20px;
-}
+} */
 
 .clients-grid img {
   max-width: 100%;
@@ -73,7 +73,7 @@
 
 .clients-carousel {
   width: 100vw; /* Full width */
-  background-color: grey !important;
+  background-color: grey;
   padding: 20px 0;
 }
 
@@ -88,7 +88,7 @@
 }
 
 .clients-grid img {
-  max-width: 80%; /* Default size */
+  max-width: 80%;
   height: auto;
   object-fit: contain;
   transition: transform 0.3s ease-in-out;
@@ -97,7 +97,7 @@
 /* Reduce size on larger screens to avoid overlap */
 @media (min-width: 1024px) {
   .clients-grid img {
-    max-width: 60%; /* Shrink logos slightly */
+    max-width: 60%;
   }
 }
 
