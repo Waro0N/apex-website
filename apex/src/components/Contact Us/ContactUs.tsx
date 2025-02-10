@@ -34,7 +34,12 @@ const ContactUs = () => {
       message: userMessage,
     };
 
-    send("apex_mail", "template_qbjowla", templateParams, "MVi1YIwmU0ITlFbz9")
+    send(
+      "service_dzygr9a",
+      "template_qzglvj9",
+      templateParams,
+      "NE1Qagu2m5S6SiPBk"
+    )
       .then(() => {
         setEmail("");
         setUserMessage("");
