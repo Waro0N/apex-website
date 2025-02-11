@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Footer from "../../footer/footer.tsx";
 import NavBar from "../../NavBar/NavBar.tsx";
+import { Button } from "@mui/material";
 
 function MaterialTestingLab() {
   const [selectedPdf, setSelectedPdf] = useState<string | null>(null);
@@ -45,7 +46,9 @@ function MaterialTestingLab() {
                   <span className="purecounter"></span>
                   <p>
                     <strong style={{ fontSize: 20 }}>
-                      CERTIFICATE OF ACCREDITATION
+                      Accrediated with NABL&nbsp;&nbsp;&nbsp;&nbsp;
+                      <br />
+                      ISO/IEC 17025:2017
                     </strong>
                     <br />
                     <br />
@@ -69,7 +72,8 @@ function MaterialTestingLab() {
                   <span className="purecounter"></span>
                   <p>
                     <strong style={{ fontSize: 20 }}>
-                      CERTIFICATE OF QUALITY MANAGEMENT SYSTEM
+                      Quality Management System <br />
+                      ISO 9001:2015
                     </strong>
                     <br />
                     <br />
@@ -97,18 +101,23 @@ function MaterialTestingLab() {
               }}
             />
             <br />
-            <button
-              onClick={() => setSelectedPdf(null)}
-              style={{
+            <Button
+              variant="contained"
+              sx={{
                 backgroundColor: "#30146c",
-                color: "white",
-                padding: 7,
-                borderRadius: 10,
-                margin: 10,
+                "&:hover": { backgroundColor: "#251056" },
               }}
+              onClick={() => setSelectedPdf(null)}
+              // style={{
+              //   backgroundColor: "#30146c",
+              //   color: "white",
+              //   padding: 7,
+              //   borderRadius: 10,
+              //   margin: 10,
+              // }}
             >
               Close PDF
-            </button>
+            </Button>
           </section>
         )}
       </main>
