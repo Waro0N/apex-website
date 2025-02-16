@@ -6,21 +6,25 @@ import Career from "./components/Pages/Career/Career.tsx";
 import About from "./components/Pages/About/About";
 import MaterialTestingLab from "./components/Pages/MaterialTestingLab/MaterialTestingLab.tsx";
 import Services from "./components/Pages/Service/Services.tsx";
+import Bot from "./components/chatBot/Bot.tsx";
 
 function App() {
   return (
-    <BrowserRouter>
-      <header className="header">
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/contact" element={<ContactUs />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/business-insider" element={<MaterialTestingLab />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/career" element={<Career />} />
-        </Routes>
-      </header>
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <header className="header">
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/contact" element={<ContactUs />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/business-insider" element={<MaterialTestingLab />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/career" element={<Career />} />
+          </Routes>
+        </header>
+      </BrowserRouter>
+      <Bot />
+    </>
   );
 }
 
