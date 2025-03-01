@@ -1,5 +1,5 @@
 import React from "react";
-import BotIcon from "../../assets/images/bot/bot.png";
+import BotIcon from "../../assets/images/bot/robot.gif";
 import "./bot.css";
 import ChatBox from "./components/chatBox/chatBox";
 
