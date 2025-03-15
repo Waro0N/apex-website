@@ -1,0 +1,23 @@
+.userQueryContainer {
+  display: flex;
+  background-color: #cadcfc;
+  align-items: center;
+  max-width: 90%; /* Ensure it does not exceed container width */
+  padding: 8px;
+  border-radius: 8px;
+  overflow-wrap: break-word; /* Ensures long words break */
+  word-break: break-word; /* Ensures text breaks properly */
+  white-space: normal; /* Allows text to wrap */
+}
+
+.QuestionText {
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: normal; /* Ensures text wraps properly */
+  max-width: 80%; /* Adjust this according to your layout */
+  overflow: hidden; /* Prevents content from overflowing */
+}
+
+img {
+  margin-left: 8px; /* Adds spacing between text and icon */
+}

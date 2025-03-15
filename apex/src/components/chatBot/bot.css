@@ -1,0 +1,15 @@
+.chatBot {
+  position: fixed; /* Always stays on screen */
+  bottom: 50px; /* Adjust distance from the bottom */
+  right: 50px; /* Adjust distance from the right */
+  z-index: 1000; /* Ensures it stays above other elements */
+  border-radius: 50%; /* Makes it circular if needed */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.chatBot img {
+  width: 50px; /* Adjust size */
+  height: 50px;
+  cursor: pointer;
+}
