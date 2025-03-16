@@ -6,7 +6,7 @@ import Career from "./components/Pages/Career/Career.tsx";
 import About from "./components/Pages/About/About";
 import MaterialTestingLab from "./components/Pages/MaterialTestingLab/MaterialTestingLab.tsx";
 import Services from "./components/Pages/Service/Services.tsx";
-import Bot from "./components/chatBot/Bot.tsx";
+// import Bot from "./components/chatBot/Bot.tsx";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
           </Routes>
         </header>
       </BrowserRouter>
-      <Bot />
+      {/* <Bot /> */}
     </>
   );
 }
