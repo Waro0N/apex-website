@@ -19,16 +19,77 @@ function MaterialTestingLab() {
               <li>
                 <a href="#">Home</a>
               </li>
-              <li>Certifications</li>
+              <li>Lab</li>
             </ol>
-            <h2>Certifications</h2>
+            <h2>Material Testing Laboratory – NABL Accredited</h2>
           </div>
         </section>
 
         {/* Certifications Section */}
-        <div className="section-title">
-          <h2>Certifications</h2>
+        <section id="about" className="about">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12 pt-6 pt-lg-0 content">
+                <p className="fst-italic">
+                  <b>
+                    Apex Engineers and Consultants Pvt. Ltd. : Your Trusted
+                    Partner in Engineering and Quality Excellence.{" "}
+                  </b>
+                </p>
+                <p className="fst-italic">
+                  Apex Engineers and Consultants Pvt. Ltd. is an ISO 9001:2015 &
+                  NABL Accredited Material Testing Laboratory, providing
+                  accurate, reliable, and timely testing services for building
+                  construction, highways, infrastructure, and industrial
+                  projects. Our laboratory follows IS, IRC, MoRTH, ASTM, and BIS
+                  standards to ensure compliance and quality assurance.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div className="container">
+          <div className="section-title">
+            <h2>Building Material Testing Services</h2>
+          </div>
         </div>
+        <section id="about" className="about">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12 pt-6 pt-lg-0 content">
+                <p className="fst-italic">
+                  We offer comprehensive building material testing to ensure
+                  structural safety and durability:
+                  <ol>
+                    <li>
+                      <b>Cement Testing (OPC, PPC, PSC):</b> Fineness,
+                      consistency, initial & final setting time, soundness,
+                      compressive strength.
+                    </li>
+                    <li>
+                      <b>
+                        Bricks & Blocks (Clay, Fly Ash, AAC, Concrete Blocks):
+                      </b>
+                      Compressive strength, water absorption, density,
+                      efflorescence, dimensional checks.
+                    </li>
+                    <li>
+                      <b> Concrete Testing:</b> Cube and core compressive
+                      strength, block density.
+                    </li>
+                    <li>
+                      <b>Paving Blocks & Natural Stones:</b>
+                      Abrasion resistance, compressive strength, water
+                      absorption, dimensional accuracy Keywords: cement testing
+                      lab, brick testing lab, concrete testing NABL, building
+                      material testing laboratory
+                    </li>
+                  </ol>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <section id="counts" className="counts">
           <div className="container">
@@ -63,7 +124,7 @@ function MaterialTestingLab() {
                   className="holographic-card"
                   onClick={() =>
                     setSelectedPdf(
-                      "/pdfs/I3264 APEX ENGINEERS & CONSULTANTS.pdf"
+                      "/pdfs/I3264 APEX ENGINEERS & CONSULTANTS.pdf",
                     )
                   }
                   style={{ cursor: "pointer" }}

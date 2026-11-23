@@ -38,7 +38,7 @@ const ContactUs = () => {
       "service_dzygr9a",
       "template_qzglvj9",
       templateParams,
-      "NE1Qagu2m5S6SiPBk"
+      "NE1Qagu2m5S6SiPBk",
     )
       .then(() => {
         setEmail("");
@@ -99,7 +99,7 @@ const ContactUs = () => {
               <div className="holographic-card">
                 <i style={{ fontSize: 30 }} className="bx bx-phone-call"></i>
                 <h3 style={{ color: "#30146c" }}>Call Us</h3>
-                <p>+91 7983213124</p>
+                <p>+91 9412593112</p>
               </div>
             </div>
           </div>
