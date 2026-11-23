@@ -33,7 +33,6 @@ const ContactUs = () => {
       subject: subject,
       message: userMessage,
     };
-
     send(
       "service_dzygr9a",
       "template_qzglvj9",
